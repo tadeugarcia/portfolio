@@ -1,5 +1,6 @@
-# Tadeu Garcia
-**Product Designer based in Rio de Janeiro, Brazil**
+**Tadeu Garcia**
+
+# Product Designer based in Rio de Janeiro, Brazil
 
 Currently, I'm part of the [+A Educação](https://www.linkedin.com/company/maisaedu/mycompany/) payments team, where I've been participating in projects from the discovery phase to delivery, working with user-centered design principles, universal design and design thinking. In addition, I already had the opportunity to work in other teams, such as e-commerce, which allowed me to expand my experience in digital products for education.I always try to establish effective and transparent communication with all areas involved in a project, especially with developers. This allows me to ensure that the process is fluid and that everyone is on the same page, resulting in well-built products.
 

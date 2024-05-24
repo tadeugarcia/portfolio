@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Color+Emoji&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 auto;
+    width: 680px;
+}
+
+h1, h2, h3 {
+    margin-bottom: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 64px;
+    letter-spacing: -2.1px;
+    color: #090b14;
+}
+
+p {
+    margin-top: 0;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 40px;
+    color: #6d7287;
+}
+
+strong {
+    font-weight: 600;
+    color: #090b14;
+}
