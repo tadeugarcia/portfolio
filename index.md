@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="caminho/para/seu/arquivo.css">
-
 **Tadeu Garcia**
 
 # Product Designer based in Rio de Janeiro, Brazil
@@ -10,6 +8,8 @@ Work permit: I'm Brazilian and currently residing in Rio de Janeiro. I'm in the 
 
 ## Recent projects
 Get to know some of the recent projects in which I had a relevant role.
+
+![A screenshot](assets/images/project-1/image-post.webp)
 
 ### Payment of outstanding fees
 Streamlining the process for students to pay outstanding tuition fees before re-enrolling for the next term.
