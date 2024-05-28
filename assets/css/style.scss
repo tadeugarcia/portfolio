@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Color+Emoji&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    -webkit-scroll-behavior: smooth;
+}
+
+body {
+    margin: 40px auto 40px auto;
+    width: 680px;
+}
+
+h1, h2, h3 {
+    margin-bottom: 0;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #090b14;
+}
+
+h1, h2 {
+    font-size: 40px;
+    line-height: 64px;
+    letter-spacing: -2.1px;
+}
+
+h3 {    
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: -0.8px;
+}
+
+
+p {
+    margin-top: 0;
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 40px;
+    color: #6d7287;
+}
+
+strong {
+    font-weight: 600;
+    color: #090b14;
+}
+
+li {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+a {
+    color: #090b14;    
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: currentColor;
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition: transform 0.3s ease-in-out;
+    }
+  
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+      transition: transform 0.3s ease-in;
+    }
+  
+    &:not(:hover)::after {
+      transition: transform 0s ease-out;
+    }
+    
+    &:has(> img) {
+        &::after {
+            content: none;
+        }
+
+        & {      
+            transition: transform 0.3s ease-in-out;
+        }
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;    
+    box-shadow: 8px 8px 20px 0 rgba(0, 0, 0, 0.16);
+}
