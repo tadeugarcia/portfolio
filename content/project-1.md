@@ -18,7 +18,3 @@ the user interface.
 **Inconsistency:** besides having to invent ways to
 communicate beta, each product came with its own
 particular approach, causing inconsistencies across AWS.
-
----
-
-[Next project ⇾](project-2.html)
