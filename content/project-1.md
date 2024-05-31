@@ -1,4 +1,4 @@
-![Mobile Website for Pontifical Catholic University of Rio de Janeiro (PUC-Rio) showcasing postgraduate courses and Master in Digital Transformation program.](assets/images/project-1/image-post.webp)
+![Mobile Website for Pontifical Catholic University of Rio de Janeiro (PUC-Rio) showcasing postgraduate courses and Master in Digital Transformation program.](assets/images/project-1/intro.webp)
 # Payment of outstanding fees
 
 - Timeline **x weeks**

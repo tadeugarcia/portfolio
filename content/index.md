@@ -9,9 +9,11 @@ Work permit: I'm Brazilian and currently residing in Rio de Janeiro. I'm in the 
 ## Recent projects
 Get to know some of the recent projects in which I had a relevant role.
 
-[![Mobile Website for Pontifical Catholic University of Rio de Janeiro (PUC-Rio) showcasing postgraduate courses and Master in Digital Transformation program.](assets/images/project-1/image-post.webp)](project-1.html)
 ### Payment of outstanding fees
 Streamlining the process for students to pay outstanding tuition fees before re-enrolling for the next term.
+
+[![Mobile Website for Pontifical Catholic University of Rio de Janeiro (PUC-Rio) showcasing postgraduate courses and Master in Digital Transformation program.](assets/images/project-1/post.webp)](project-1.html)
+
 [View Project](project-1.html)
 
 
@@ -29,10 +31,9 @@ What sets me apart is my genuine **curiosity about the inner workings of interfa
 
 In my previous role, I focused on building the front-end, handing it over to the developers to work on the back end. This, along with starting my career as an art director, has given me a strong UI skill set today.
 
-One of the directors there, who was also a **developer and visually impaired, taught me many things about accessibility**. From best practices to using screen readers alongside him, it was an incredible learning experience for me.
+One of the directors there, who was also a **developer and visually impaired, taught me too many things about accessibility**: from best practices to using screen readers alongside him, it was an incredible learning experience for me.
 
 ## You can find me over here
-
 [LinkedIn](https://www.linkedin.com/in/garciatadeu/)
 [Mail](mailto:tadeugarcia.92@gmail.com)
 [Phone](tel:5521979976655)

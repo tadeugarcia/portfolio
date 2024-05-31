@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Color+Emoji&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
 
 html {
     scroll-behavior: smooth;
@@ -72,7 +73,8 @@ a {
     color: #090b14;    
     text-decoration: none;
     position: relative;
-    display: inline-block;
+    display: flex;
+    border-radius: 8px;
     
     &::after {
       content: '';
@@ -104,10 +106,12 @@ a {
 
         & {      
             transition: transform 0.3s ease-in-out;
+            transition: box-shadow 0.3s ease-in-out;
         }
 
         &:hover {
-            transform: scale(1.02);
+            transform: scale(1.00);
+            box-shadow: 0 10px 30px rgb(206, 209, 224);
         }
     }
 }
@@ -115,9 +119,7 @@ a {
 
 img {
     width: 100%;
-    height: auto;
     border-radius: 8px;    
-    box-shadow: 8px 8px 20px 0 rgba(0, 0, 0, 0.16);
 }
 
 .figma {
