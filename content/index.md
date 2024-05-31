@@ -9,13 +9,10 @@ Work permit: I'm Brazilian and currently residing in Rio de Janeiro. I'm in the 
 ## Recent projects
 Get to know some of the recent projects in which I had a relevant role.
 
+[![Mobile Website for Pontifical Catholic University of Rio de Janeiro (PUC-Rio) showcasing postgraduate courses and Master in Digital Transformation program.](assets/images/project-1/post.webp)](project-1.html)
 ### Payment of outstanding fees
 Streamlining the process for students to pay outstanding tuition fees before re-enrolling for the next term.
-
-[![Mobile Website for Pontifical Catholic University of Rio de Janeiro (PUC-Rio) showcasing postgraduate courses and Master in Digital Transformation program.](assets/images/project-1/post.webp)](project-1.html)
-
 [View Project](project-1.html)
-
 
 ## More about me
 
