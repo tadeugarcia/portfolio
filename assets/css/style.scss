@@ -11,13 +11,13 @@ body {
     width: 680px;
 
     @media (max-width: 768px) {
-        margin: 40px 8vw;
-        width: 84vw;
+        margin: 40px 24px;
+        width: calc(100% - 48px);
     }
 }
 
 h1, h2, h3 {
-    margin-bottom: 0;
+    margin-bottom: 16px;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -26,9 +26,13 @@ h1, h2, h3 {
 }
 
 h1, h2 {
-    font-size: 40px;
-    line-height: 52px;
-    letter-spacing: -2.1px;
+    font-size: 52px;
+    line-height: 60px;
+    letter-spacing: -2.8px;
+}
+
+h2 {
+    margin-top: 140px;
 }
 
 h3 {    
