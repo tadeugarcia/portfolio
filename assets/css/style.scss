@@ -65,34 +65,42 @@ li {
     font-style: normal;
     font-size: 24px;
     line-height: 40px;
+    color: #6d7287;
+    list-style-type: circle;
 }
 
 a {
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     text-decoration: none;
     font-size: 24px;
     line-height: 40px;
-    color: #1A8917;
     position: relative;
     display: flex;
     border-radius: 8px;
+    color: #090b14;
     transition: color 0.2s ease-in-out;
     
     &:hover {
-        color: #090b14;
+        color: #0051c4;
+        fill: #0051c4;
     }
     
     &:has(> img) {
         & {
             transition: box-shadow 0.3s ease-in-out;
         }
-
+        
         &:hover {
             box-shadow: 0 10px 30px rgb(206, 209, 224);
         }
+    }
+
+    svg {
+        margin: 4px 8px 0 0;
+        transition: fill 0.2s ease-in-out;
     }
 }
 
