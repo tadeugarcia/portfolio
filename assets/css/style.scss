@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Color+Emoji&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+$font-gray: hsl(228, 12%, 32%);
+$font-black: hsl(228, 12%, 12%);
+$font-link: hsl(216, 100%, 40%);
 
 html {
     scroll-behavior: smooth;
@@ -9,26 +14,35 @@ html {
 body {
     margin: 40px auto;
     width: 680px;
-
+    
     @media (max-width: 768px) {
         margin: 40px 24px;
         width: calc(100% - 48px);
     }
 }
 
+* {    
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: $font-gray;
+    font-size: 24px;
+    line-height: 40px;
+}
+
 h1, h2, h3 {
     margin-bottom: 16px;
-    font-family: "Oswald", sans-serif;
+    font-family: "DM Serif Display", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
-    color: #090b14;
+    color: $font-black;
 }
 
 h1, h2 {
     font-size: 52px;
     line-height: 60px;
-    letter-spacing: -2.8px;
 }
 
 h2 {
@@ -38,54 +52,31 @@ h2 {
 h3 {    
     font-size: 28px;
     line-height: 46px;
-    letter-spacing: -0.8px;
 }
-
 
 p {
     margin-top: 0;
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 40px;
-    color: #6d7287;
 }
 
 strong {
     font-weight: 600;
-    color: #090b14;
+    color: $font-black;
 }
 
 li {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 24px;
-    line-height: 40px;
-    color: #6d7287;
     list-style-type: circle;
 }
 
 a {
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 500;
-    font-style: normal;
-    text-decoration: none;
-    font-size: 24px;
-    line-height: 40px;
     position: relative;
     display: flex;
     border-radius: 8px;
-    color: #090b14;
+    color: $font-black;
     transition: color 0.2s ease-in-out;
     
     &:hover {
-        color: #0051c4;
-        fill: #0051c4;
+        color: $font-link;
+        fill: $font-link;
     }
     
     &:has(> img) {
@@ -94,7 +85,7 @@ a {
         }
         
         &:hover {
-            box-shadow: 0 10px 30px rgb(206, 209, 224);
+            box-shadow: 0 10px 30px rgb(208, 208, 224);
         }
     }
 
@@ -117,7 +108,7 @@ img {
 }
 
 .project-end {
-    border-top: 1px solid #6d7287;
+    border-top: 1px solid $font-gray;
     margin-top: 40px;
     padding-top: 24px;
     width: 100%;
