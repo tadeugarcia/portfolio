@@ -54,12 +54,9 @@ h1, h2, h3 {
 }
 
 h1, h2 {
+    margin-top: 200px;
     font-size: 52px;
     line-height: 60px;
-}
-
-h2 {
-    margin-top: 140px;
 }
 
 h3 {    
@@ -144,7 +141,15 @@ img {
 }
 
 .social {
-    width: 88%;
-    display: inline-flex;
-    justify-content: space-between;
+    @media (min-width: $tablet) {
+        width: 88%;
+        display: inline-flex;
+        justify-content: space-between;
+    }
+}
+
+.avatar {
+    position: absolute;
+    width: 200px;
+    height: 200px;
 }
