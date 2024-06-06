@@ -1,7 +1,7 @@
 Tadeu Garcia
 <br><br><br><br><br>
 
-# Product Designer based in Rio de Janeiro, Brazil
+# Senior Product Designer based in Rio de Janeiro
 
 Experienced designer specializing in creating digital products for e-commerce, marketplaces, billing and payment systems, as well as back-office applications. Skilled in developing web components for desktop and mobile platforms, with expertise in Material Design for app interfaces.
 
