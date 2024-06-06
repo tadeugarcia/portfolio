@@ -45,7 +45,7 @@
 	<script>
 		// loadMarkdown
 		document.addEventListener("DOMContentLoaded", function() {
-			fetch('content/index.md')
+			fetch('index.md')
 			.then(response => response.text())
 			.then(text => {
 				const dirtyHTML = marked.parse(text);

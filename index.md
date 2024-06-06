@@ -1,4 +1,5 @@
-**Tadeu Garcia**
+Tadeu Garcia
+<br><br><br><br><br>
 
 # Product Designer based in Rio de Janeiro, Brazil
 
@@ -11,8 +12,8 @@ Relevant experience from recent times
 
 [![Mobile Website for Pontifical Catholic University of Rio de Janeiro (PUC-Rio) showcasing postgraduate courses and Master in Digital Transformation program.](assets/images/project-1/post.webp)](project-1.html)
 
-### Payment of outstanding fees
-Streamlining the process for students to pay outstanding tuition fees before re-enrolling for the next term.
+### Premium Posgraduate Redesign
+In this redesign, the navigation flow and the entire course purchase process were completely revamped.
 [View project](project-1.html)
 
 ## More about me

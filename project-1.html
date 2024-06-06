@@ -41,7 +41,7 @@
 	<script>
 		// loadMarkdown
 		document.addEventListener("DOMContentLoaded", function() {
-			fetch('content/project-1.md')
+			fetch('project-1.md')
 			.then(response => response.text())
 			.then(text => {
 				const dirtyHTML = marked.parse(text);
