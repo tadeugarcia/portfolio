@@ -26,12 +26,22 @@ body {
     }
 }
 
-* {    
+* {  
+    opacity: 0;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-size: 24px;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+* {
+    animation: fadeIn 1s ease-in-out forwards;
 }
 
 .material-symbols-outlined {
