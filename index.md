@@ -7,13 +7,13 @@ Experienced designer specializing in creating digital products for e-commerce, m
 
 Brazilian, obtaining Spanish citizenship by end-2024.
 
-## Recent projects
-Relevant experience from recent times
+## Work Cases
+Relevant experience from last years
 
 [![Mobile Website for Pontifical Catholic University of Rio de Janeiro (PUC-Rio) showcasing postgraduate courses and Master in Digital Transformation program.](assets/images/project-1/post.webp)](project-1.html)
 
 ### Premium Posgraduate Redesign
-In this redesign, the navigation flow and the entire course purchase process were completely revamped.
+In this redesign, the navigation flow and the entire course purchase process were completely renewed.
 [View project](project-1.html)
 
 ## More about me
