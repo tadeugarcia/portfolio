@@ -4,11 +4,9 @@
 The navigation flow and the entire course purchase process were completely renewed.
 
 - **Timeline** 3 months (May - July 2022).
-- **My role** Product Designer and UX Researcher.
+- **My role** Product Designer, UX Researcher, Recruiter.
 - **Team** The product manager and I.
 - **Goals** Redesign the course purchase experience to highlight their premium offering.
-
-<small>3 min read</small>
 
 ---
 
@@ -21,7 +19,7 @@ There was no mobile version, and what loaded on smartphones was the reduced web 
 ![](assets/images/case-1/old-screens-2.png)
 <small>Simplified previous course purchase journey.</small>
 
-## Research
+## Desk research
 In the market perception analysis, compared to other institutions offering the same model of digital post-graduate programs, <mark>the university was positioned with the second-highest price.</mark>
 
 In the benchmarking of the enrollment journey, it became clear that the user effort required to enroll using the website was much higher compared to competitors.
@@ -48,5 +46,5 @@ The 10 tests performed (5 of each model) resulted in <mark>57.14% faster navigat
 
 Regarding the recruitment of participants, it was done by me, and a discount coupon for the bookstore was used as an incentive to help with this.
 
-## Figma mobile prototype
+## Figma prototype
 While a desktop prototype existed, the project focused on mobile.

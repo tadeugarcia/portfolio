@@ -8,8 +8,6 @@ The navigation flow and the entire course purchase process were completely renew
 - **Team** The product manager and I.
 - **Goals** Redesign the course purchase experience to highlight their premium offering.
 
-<small>8 min read</small>
-
 ---
 
 ## Previous Design

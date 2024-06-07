@@ -16,8 +16,10 @@ Relevant experience from last years
 In this redesign, the navigation flow and the entire course purchase process were completely renewed.
 [View case](case-1.html)
 
-### Premium Posgraduate Redesign
-In this redesign, the navigation flow and the entire course purchase process were completely renewed.
+[![](assets/images/case-2/post.png)](case-2.html)
+
+### Payment of outstanding fees
+Streamlining the process for students to pay outstanding tuition fees before re-enrolling for the next term.
 [View case](case-2.html)
 
 ## More about me

@@ -1,52 +1,49 @@
-![](assets/images/case-1/intro.png)
+![](assets/images/case-2/intro.png)
 
-# Premium Posgraduate Redesign
-The navigation flow and the entire course purchase process were completely renewed.
+# Payment of outstanding fees
+Optimizing the process for students to pay outstanding tuition fees before re-enrolling for the next term.
 
-- **Timeline** 3 months (May - July 2022).
-- **My role** Product Designer and UX Researcher.
-- **Team** The product manager and I.
-- **Goals** Redesign the course purchase experience to highlight their premium offering.
-
-<small>8 min read</small>
+- **Timeline** 1 month (Nov - Dec 2023).
+- **My role** Product Designer, UX Researcher, Recruiter.
+- **Team** The product owner and I.
+- **Goals** Design a flow that allows students to settle their outstanding debts and complete their re-enrollment.
 
 ---
 
-## Previous Design
-There was no mobile version, and what loaded on smartphones was the reduced web version.
+## About the project
+I designed the <mark>entire re-enrollment flow</mark>, including the part showcased in this case study as well as the back-office configuration section.
 
-![](assets/images/case-1/old-screens-1.png)
-<small>Simplified previous course selection journey.</small>
+Some elements and colors appearing on the pages are pre-existing components from the Design System, which I utilized in the best possible layout. The cards "Proceed to Payment" or "Proceed to Negotiation" were designed by me and are not part of the Design System.
 
-![](assets/images/case-1/old-screens-2.png)
-<small>Simplified previous course purchase journey.</small>
+![](assets/images/case-2/new-screens-1.png)
+<small>Simplified payment journey for outstanding fees for re-enrollment.</small>
 
-## Research
-In the market perception analysis, compared to other institutions offering the same model of digital post-graduate programs, <mark>the university was positioned with the second-highest price.</mark>
+![](assets/images/case-2/new-screens-2.png)
+<small>Other screens of the re-enrollment journey.</small>
 
-In the benchmarking of the enrollment journey, it became clear that the user effort required to enroll using the website was much higher compared to competitors.
-
-## What were the problems?
-- We did not have a defined visual identity.
-- We needed to <mark>communicate the aspect of a premium product</mark>, respecting the market positioning found in the previous analysis.
+## Clarifying payment vs negotiation flow
+The stakeholders were uncertain if users would understand the difference between choosing "Proceed to Payment" or "Proceed to Negotiation".
+  
+![](assets/images/case-2/problem.png)
+  
 
 ---
-
-## Redesigning the experience
-The redesign incorporated all aspects of the previous analysis. <mark>I created a style guide containing navigation components and a new color palette.</mark>
-
-![](assets/images/case-1/new-screens-1.png)
-<small>Simplified new course selection journey.</small>
-
-![](assets/images/case-1/new-screens-2.png)
-<small>Simplified new course purchase journey.</small>
 
 ## Usability Testing
-Using Maze, two unmoderated usability tests were conducted to test the fluidity of navigation and the difference from the previous version: one test with the previous version and one test with the new version. 
+Using Maze, two unmoderated usability tests were conducted: one with the previous version and one with the new version, to test navigation fluidity and differences.
 
-The 10 tests performed (5 of each model) resulted in <mark>57.14% faster navigation and a 67% drop in the rate of incorrect clicks.</mark>
+One of the post-test questions validated what the journey recordings also indicated: <mark>100% of participants said they felt very confident or confident about choosing</mark> between "Proceed to Payment" or "Proceed to Negotiation", and the subsequent page aligned with their expectations from that choice.
 
-Regarding the recruitment of participants, it was done by me, and a discount coupon for the bookstore was used as an incentive to help with this.
+Regarding participant recruitment, it wasn't too difficult as these users were employees of the company and students from a partner university.
 
-## Figma mobile protype
-While a desktop prototype existed, the case focused on mobile.
+<mark>However, an unexpected problem arose:</mark> in addition to some misclicks, some users reported confusion on this screen due to two payment boxes appearing consecutively.
+
+![](assets/images/case-2/maze.png)
+
+## Proposed solution
+Utilize a step-by-step pattern to avoid confusing users about the existence of two separate yet sequential payments.
+![](assets/images/case-2/solution.png)
+
+
+## Figma protype
+I designed the entire re-enrollment flow, including other pending items beyond financial obligations. However, for the purpose of this case study, I have hidden the remaining pending items for simplification.
