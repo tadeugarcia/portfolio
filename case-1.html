@@ -20,7 +20,7 @@
     </script>
 </head>
 <body>
-	<div class="project-nav-start">
+	<div class="nav-start">
 		<a href="index.html">
 			<span class="material-symbols-outlined">arrow_left_alt</span> All work
 		</a>
@@ -32,7 +32,7 @@
 
 	<h2>Thank you for your time</h2>
 	<p>
-		Let's move on to the <a href="project-2.html">next project <span class="material-symbols-outlined">arrow_right_alt</span></a>
+		Let's move on to the <a href="case-2.html">next case <span class="material-symbols-outlined">arrow_right_alt</span></a>
 	</p>
 
 	<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -41,7 +41,7 @@
 	<script>
 		// loadMarkdown
 		document.addEventListener("DOMContentLoaded", function() {
-			fetch('project-1.md')
+			fetch('case-1.md')
 			.then(response => response.text())
 			.then(text => {
 				const dirtyHTML = marked.parse(text);

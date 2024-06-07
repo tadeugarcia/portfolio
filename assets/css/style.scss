@@ -139,14 +139,14 @@ hr {
 }
 
 
-.project-nav-start {
+.nav-start {
     @media (min-width: $tablet) {
         position: fixed;
         left: 40px;
     }
 }
 
-.project-nav-end {
+.nav-end {
     margin-top: 40px;
     padding-top: 24px;
     width: 100%;
