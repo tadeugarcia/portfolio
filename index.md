@@ -16,6 +16,8 @@ Relevant experience from last years
 In this redesign, the navigation flow and the entire course purchase process were completely renewed.
 [View case](case-1.html)
 
+---
+
 [![](assets/images/case-2/post.png)](case-2.html)
 
 ### Payment of outstanding fees
