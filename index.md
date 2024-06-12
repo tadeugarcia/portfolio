@@ -9,6 +9,7 @@ Brazilian, obtaining Spanish citizenship by end-2024.
 
 ## Work cases
 Relevant experience from recent years
+<br><br>
 
 [![Mobile Website for Pontifical Catholic University of Rio de Janeiro (PUC-Rio) showcasing postgraduate courses and Master in Digital Transformation program.](assets/images/case-1/post.webp)](case-1.html)
 
