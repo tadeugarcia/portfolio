@@ -1,5 +1,4 @@
 Tadeu Garcia
-<br><br><br><br><br>
 
 # Senior Product Designer based in Rio de Janeiro
 
