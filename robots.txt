@@ -1,5 +1,8 @@
 User-agent: LinkedInBot
 Allow: /
 
+User-agent: OpenAI
+Allow: /
+
 User-agent: *
 Disallow: /
