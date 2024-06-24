@@ -1,5 +1,3 @@
-![](assets/images/case-2/intro.png)
-
 # Payment of outstanding fees
 Optimizing the process for students to pay outstanding tuition fees before re-enrolling for the next term.
 

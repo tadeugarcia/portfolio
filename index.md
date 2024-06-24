@@ -10,7 +10,12 @@ Brazilian, obtaining Spanish citizenship by end-2024.
 Relevant experience from recent years
 <br><br>
 
-[![Mobile Website for Pontifical Catholic University of Rio de Janeiro (PUC-Rio) showcasing postgraduate courses and Master in Digital Transformation program.](assets/images/case-1/post.webp)](case-1.html)
+<a href="case-1.html" class="video-intro">
+    <video autoplay loop muted>
+        <source src="assets/images/case-1/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</a>
 
 ### Premium Posgraduate Redesign
 In this redesign, the navigation flow and the entire course purchase process were completely renewed.
@@ -18,7 +23,12 @@ In this redesign, the navigation flow and the entire course purchase process wer
 
 ---
 
-[![](assets/images/case-2/post.png)](case-2.html)
+<a href="case-2.html" class="video-intro">
+    <video autoplay loop muted>
+        <source src="assets/images/case-2/video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</a>
 
 ### Payment of outstanding fees
 Streamlining the process for students to pay outstanding tuition fees before re-enrolling for the next term.

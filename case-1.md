@@ -1,5 +1,3 @@
-![](assets/images/case-1/intro.png)
-
 # Premium posgraduate redesign
 The navigation flow and the entire course purchase process were completely renewed.
 

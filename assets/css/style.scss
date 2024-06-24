@@ -7,6 +7,8 @@ $font-dark-gray: hsl(228, 12%, 32%);
 $font-black: hsl(228, 12%, 12%);
 $font-link: hsl(216, 100%, 40%);
 
+$bg-light-gray: #f4f6f8;
+
 $mobile: 768px;
 $tablet: 992px;
 $desktop: 1200px;
@@ -117,13 +119,15 @@ a {
         fill: $font-link;
     }
     
-    &:has(> img) {
+    &:has(> video) {
         & {
-            transition: box-shadow 0.3s ease-in-out;
+            transition: box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+            border: 1px solid $bg-light-gray;
         }
         
         &:hover {
-            box-shadow: 0 10px 30px rgb(208, 208, 224);
+            box-shadow: 4px 4px 24px #e0e0eb;
+            border: 1px solid $font-link;
         }
     }
 
@@ -161,6 +165,22 @@ hr {
 
     a:nth-of-type(1) {
         margin-right: auto; /* Empurra o primeiro link para a esquerda */
+    }
+}
+
+.video-intro {
+    height: 512px;
+    background-color: $bg-light-gray;
+    border-radius: 16px;
+    // clip-path: view-box;
+
+
+    video {
+        display: block;
+        margin: 0 auto;
+        padding: 16px 0;
+        height: calc(100% - 32px);
+        // transform: translateY(120px) scale(1.5);
     }
 }
 
