@@ -2,23 +2,19 @@
 **Senior Product Designer**
 *Rio de Janeiro, Brazil*
 
+linkedin.com/in/garciatadeu | tadeugarcia.com | tadeugarcia.92@gmail.com | +55 21 979976655
+
 ## Summary
 Experienced designer with creating digital products for B2B and B2C SaaS, E-commerce, Marketplaces, Billing and Payment Systems, Back-office applications. Skilled in web components and Material Design for desktop and mobile.
 
-linkedin.com/in/garciatadeu (LinkedIn)
-tadeugarcia.com (Portfolio)
-tadeugarcia.92@gmail.com (Email)
-+55 21 979976655 (Mobile)
-
 Brazilian, obtaining Spanish citizenship by end-2024.
-
 
 ## Work Experience
 
 ### +A Educação
 **Senior Product Designer**
-*November 2022 - Present
-Rio Grande do Sul, Brazil*
+*November 2022 - Present | Rio Grande do Sul, Brazil*
+
 
 I contribute to the student billing system, from designing payment screens to managing payments in the back-office.
 
@@ -35,13 +31,11 @@ Main activities:
 
 ### +A Educação
 **Product Designer**
-*January 2021 - November 2022
-Rio Grande do Sul, Brazil*
+*January 2021 - November 2022 | Rio Grande do Sul, Brazil*
 
 ### Informal Serviços e Consultoria em Informática
 **Lead UI/UX Engineer**
-*September 2018 - December 2020
-Rio de Janeiro, Brazil*
+*September 2018 - December 2020 | Rio de Janeiro, Brazil*
 
 I was involved in designing app screens and flows from conception to publishing on app stores, following Material Design guidelines.
 
@@ -56,13 +50,11 @@ Main activities:
 
 ### Informal Serviços e Consultoria em Informática
 **UI/UX Engineer**
-*December 2016 - September 2018
-Rio de Janeiro, Brazil*
+*December 2016 - September 2018 | Rio de Janeiro, Brazil*
 
 ### Noblinddz
 **Art Director**
-*April 2015 - December 2016
-Rio de Janeiro, Brazil*
+*April 2015 - December 2016 | Rio de Janeiro, Brazil*
 
 Main activities:
 - Creating low to high-fidelity interactive prototypes for institutional websites and landing pages.
@@ -71,8 +63,7 @@ Main activities:
 
 ### Agência h1
 **Junior Art Director**
-*September 2014 - April 2015
-Rio de Janeiro, Brazil*
+*September 2014 - April 2015 | Rio de Janeiro, Brazil*
 
 Main activities:
 - Designing institutional websites and landing pages.
@@ -80,31 +71,25 @@ Main activities:
 
 ### Agência h1
 **Intern Art Director**
-*September 2013 - September 2014
-Rio de Janeiro, Brazil*
+*September 2013 - September 2014 | Rio de Janeiro, Brazil*
 
 ### Obra Social Dona Meca
 **Intern Graphic Designer**
-*April 2013 - September 2013
-Rio de Janeiro, Brazil*
+*April 2013 - September 2013 | Rio de Janeiro, Brazil*
 
 Main activities:
 - Creation of social media posts, posters and other printed materials.
 
 ## Education
-**Postgraduate's degree**
-Ergodesign of Interfaces: Usability and Information Architecture (2016)
-*Pontifícia Universidade Católica do Rio de Janeiro
-Rio de Janeiro, Brazil*
+**Postgraduate's degree** in Ergodesign of Interfaces: Usability and Information Architecture (2016)
+*Pontifícia Universidade Católica do Rio de Janeiro*
 
-**Associate's degree**
-Graphic Design (2014)
-*Universidade Estácio de Sá
-Rio de Janeiro, Brazil*
+**Associate's degree** in Graphic Design (2014)
+*Universidade Estácio de Sá*
 
 ## Skills
 - Languages: Portuguese (Native), English (Upper Intermediate - B2 level)
-- UI/UX Design: Prototyping (desktop and mobile, low to high-fidelity), Design Systems, Web Components, Material Design, UX Patterns, UI Patterns
+- UI/UX Design: Prototyping (desktop and mobile, low to high-fidelity), Design Systems, Web Components, Material Design, UX Patterns, UI Patterns, UX writing
 - Design Tools: Figma (Auto Layout, Components, Variants), Sketch, Adobe XD, InVision, Axure, Adobe Creative Suite (Photoshop, Illustrator, InDesign, Premiere)
 - UX Research: User Research, User Interviews, Usability Testing, A/B Testing, Surveys, Journey Mapping, Recruitment, UX Metrics, Data Analysis
 - Data & Analytics: Google Analytics, Google Tag Manager, Google Optimize, Hotjar, Clarity, Maze
