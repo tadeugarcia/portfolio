@@ -1,8 +1,9 @@
+
 # Tadeu Garcia
 **Senior Product Designer**
 *Rio de Janeiro, Brazil*
 
-linkedin.com/in/garciatadeu | tadeugarcia.com | tadeugarcia.92@gmail.com | +55 21 979976655
+[LinkedIn](https://linkedin.com/in/garciatadeu) | [Portfolio](https://tadeugarcia.com) | [tadeugarcia.92@gmail.com](mailto:tadeugarcia.92@gmail.com) | [+55 21 97997 6655](tel:+5521979976655)
 
 ## Summary
 Experienced designer with creating digital products for B2B and B2C SaaS, E-commerce, Marketplaces, Billing and Payment Systems, Back-office applications. Skilled in web components and Material Design for desktop and mobile.
@@ -14,7 +15,6 @@ Brazilian, obtaining Spanish citizenship by end-2024.
 ### +A Educação
 **Senior Product Designer**
 *November 2022 - Present | Rio Grande do Sul, Brazil*
-
 
 I contribute to the student billing system, from designing payment screens to managing payments in the back-office.
 
@@ -70,11 +70,11 @@ Main activities:
 - Creation of static and animated banners, email marketing, social media posts, and video editing.
 
 ### Agência h1
-**Intern Art Director**
+**Art Director Intern**
 *September 2013 - September 2014 | Rio de Janeiro, Brazil*
 
 ### Obra Social Dona Meca
-**Intern Graphic Designer**
+**Graphic Designer Intern**
 *April 2013 - September 2013 | Rio de Janeiro, Brazil*
 
 Main activities:
@@ -88,13 +88,12 @@ Main activities:
 *Universidade Estácio de Sá*
 
 ## Skills
-- Languages: Portuguese (Native), English (Upper Intermediate - B2 level)
-- UI/UX Design: Prototyping (desktop and mobile, low to high-fidelity), Design Systems, Web Components, Material Design, UX Patterns, UI Patterns, UX writing
-- Design Tools: Figma (Auto Layout, Components, Variants), Sketch, Adobe XD, InVision, Axure, Adobe Creative Suite (Photoshop, Illustrator, InDesign, Premiere)
-- UX Research: User Research, User Interviews, Usability Testing, A/B Testing, Surveys, Journey Mapping, Recruitment, UX Metrics, Data Analysis
-- Data & Analytics: Google Analytics, Google Tag Manager, Google Optimize, Hotjar, Clarity, Maze
-- Front-end Development: HTML, CSS, SASS, JavaScript, Bootstrap, WordPress, Zeplin
-- Version Control & Development Tools: Git, NPM, Chrome DevTools
-- Project Management: Agile, Scrum, Kanban
-Collaboration Tools: Microsoft Office Suite, Google Docs, FigJam, Miro, Mural, HubSpot
-- Accessibility: WCAG Guidelines, Accessibility testing, Screen reader testing
+- **Languages:** Portuguese (Native), English (Upper Intermediate - B2 level)
+- **UI/UX Design:** Prototyping (desktop and mobile, low to high-fidelity), Design Systems, Web Components, Material Design, UX Patterns, UI Patterns, UX Writing
+- **Design Tools:** Expert level experience with Figma (Auto Layout, Components, Variants), Sketch, Adobe XD, InVision, Axure, Adobe Creative Suite (Photoshop, Illustrator, InDesign, Premiere)
+- **UX Research:** User Research, User Interviews, Usability Testing, A/B Testing, Surveys, Journey Mapping, Recruitment, UX Metrics, Data Analysis
+- **Data & Analytics:** Google Analytics, Google Tag Manager, Google Optimize, Hotjar, Clarity, Maze
+- **Front-end Development:** HTML, CSS, SASS, JavaScript, Bootstrap, WordPress, Zeplin, Git, NPM, Chrome DevTools
+- **Project Management:** Agile, Scrum, Kanban
+- **Collaboration Tools:** Microsoft Office Suite, Google Docs, FigJam, Miro, Mural, HubSpot
+- **Accessibility:** WCAG Guidelines, Accessibility testing, Screen reader testing
