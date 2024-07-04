@@ -85,14 +85,14 @@ Visual Design, Interaction Design, Mobile Design, User Research, Product Analyti
 h1 {
     margin: 0 !important;
     font-size: 20px !important;
-    font-weight: normal !important;
+    font-weight: bolder !important;
     color: black !important;
 }
 
 h2 {
     margin: 20px 0 0 0 !important;
     font-size: 20px !important;
-    font-weight: normal !important;
+    font-weight: bolder !important;
     color: black !important;
 }
 
