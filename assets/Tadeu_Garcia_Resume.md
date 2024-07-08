@@ -8,7 +8,7 @@ Eligible for ESTA/Visa Waiver Program for US business travel.
 [LinkedIn](https://linkedin.com/in/garciatadeu) | [Portfolio](https://tadeugarcia.com) | [tadeugarcia.92@gmail.com](mailto:tadeugarcia.92@gmail.com) | [+55 21 97997 6655](tel:+5521979976655)
 
 ## Summary
-Experienced designer with expertise in creating digital products for B2B and B2C SaaS, E-commerce, Marketplaces, Billing and Payment Systems, and Back-office applications.
+Experienced designer with expertise in creating digital products for B2B and B2C SaaS, E-commerce, Marketplaces, Financial Systems, and Back-office applications.
 
 ## Top skills
 Visual Design, Interaction Design, Mobile Design, User Research, Product Analytics
@@ -19,7 +19,7 @@ Visual Design, Interaction Design, Mobile Design, User Research, Product Analyti
 **Senior Product Designer**
 *November 2022 - Present | Rio Grande do Sul, Brazil*
 
-- Contributing to the student billing system, designing payment screens and managing back-office payments.
+- Contributing to the student financial system, designing transaction and back-office payment systems.
 - Involved in the comprehensive redesign of the health courses marketplace, from product discovery to delivery, including wireframing, usability testing, and planning post-launch enhancements.
 - Conducting experimentation for continuous product evolution with A/B testing, user interviews, usability testing, surveys, quantitative and qualitative data analysis.
 - Conducting user research and documenting processes and results.
@@ -71,7 +71,7 @@ Visual Design, Interaction Design, Mobile Design, User Research, Product Analyti
 
 ## Skills
 - **Languages:** Portuguese (Native), English (Upper Intermediate - B2 level)
-- **UI/UX Design:** Prototyping (desktop and mobile, low to high-fidelity), Design Systems, Web Components, Material Design, UX Patterns, UI Patterns, UX Writing
+- **UI/UX Design:** Prototyping (Responsive desktop and mobile, interactive, low to high-fidelity), Design Systems, Web Components, Material Design, UX Patterns, UI Patterns, UX Writing
 - **Design Tools:** Expert level experience with Figma (Auto Layout, Components, Variants), Sketch, Adobe XD, InVision, Axure, Adobe Creative Suite (Photoshop, Illustrator, InDesign, Premiere)
 - **UX Research:** User Research, User Interviews, Usability Testing, A/B Testing, Surveys, Journey Mapping, Recruitment, UX Metrics, Data Analysis
 - **Data & Analytics:** Google Analytics, Google Tag Manager, Google Optimize, Hotjar, Clarity, Maze
