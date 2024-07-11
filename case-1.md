@@ -1,7 +1,7 @@
 # Premium posgraduate redesign
 The navigation flow and the entire course purchase process were completely renewed.
 
-- **Timeline** 3 months (May - July 2022).
+- **Timeline** 3 months.
 - **My role** Product Designer, UX Researcher, Recruiter.
 - **Team** The product manager and I.
 - **Goals** Redesign the course purchase experience to highlight their premium offering.

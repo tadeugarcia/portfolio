@@ -1,7 +1,7 @@
 # Payment of outstanding fees
 Optimizing the process for students to pay outstanding tuition fees before re-enrolling for the next term.
 
-- **Timeline** 1 month (Nov - Dec 2023).
+- **Timeline** 1 month.
 - **My role** Product Designer, UX Researcher, Recruiter.
 - **Team** The product owner and I.
 - **Goals** Design a flow that allows students to settle their outstanding debts and complete their re-enrollment.
@@ -18,6 +18,8 @@ Some elements and colors appearing on the pages are pre-existing components from
 
 ![](assets/images/case-2/new-screens-2.png)
 <small>Other screens of the re-enrollment journey.</small>
+
+---
 
 ## Clarifying payment vs negotiation flow
 The stakeholders were uncertain if users would understand the difference between choosing "Proceed to Payment" or "Proceed to Negotiation".
