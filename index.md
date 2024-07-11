@@ -6,7 +6,7 @@ Experienced designer specializing in creating digital products for e-commerce, m
 
 Brazilian, obtaining Spanish citizenship by end-2024.
 
-## Work cases
+## Case studies
 Relevant experience from recent years
 <br><br>
 
