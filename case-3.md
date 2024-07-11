@@ -45,6 +45,3 @@ Using Maze, two unmoderated usability tests were conducted to test the fluidity 
 The 10 tests performed (5 of each model) resulted in <mark>57.14% faster navigation and a 67% drop in the rate of incorrect clicks.</mark>
 
 Regarding the recruitment of participants, it was done by me, and a discount coupon for the bookstore was used as an incentive to help with this.
-
-## Figma mobile protype
-While a desktop prototype existed, the project focused on mobile.

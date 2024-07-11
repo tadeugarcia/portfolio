@@ -17,10 +17,14 @@ There was no mobile version, and what loaded on smartphones was the reduced web 
 ![](assets/images/case-1/old-screens-2.png)
 <small>Simplified previous course purchase journey.</small>
 
+---
+
 ## Desk research
 In the market perception analysis, compared to other institutions offering the same model of digital post-graduate programs, <mark>the university was positioned with the second-highest price.</mark>
 
 In the benchmarking of the enrollment journey, it became clear that the user effort required to enroll using the website was much higher compared to competitors.
+
+---
 
 ## What were the problems?
 - We did not have a defined visual identity.
@@ -37,6 +41,8 @@ The redesign incorporated all aspects of the previous analysis. <mark>I created 
 ![](assets/images/case-1/new-screens-2.png)
 <small>Simplified new course purchase journey.</small>
 
+---
+
 ## Usability Testing
 Using Maze, two unmoderated usability tests were conducted to test the fluidity of navigation and the difference from the previous version: one test with the previous version and one test with the new version. 
 
@@ -44,5 +50,4 @@ The 10 tests performed (5 of each model) resulted in <mark>57.14% faster navigat
 
 Regarding the recruitment of participants, it was done by me, and a discount coupon for the bookstore was used as an incentive to help with this.
 
-## Figma prototype
-While a desktop prototype existed, the project focused on mobile.
+---

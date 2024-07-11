@@ -23,7 +23,6 @@ Some elements and colors appearing on the pages are pre-existing components from
 The stakeholders were uncertain if users would understand the difference between choosing "Proceed to Payment" or "Proceed to Negotiation".
   
 ![](assets/images/case-2/problem.png)
-  
 
 ---
 
@@ -38,10 +37,10 @@ Regarding participant recruitment, it wasn't too difficult as these users were e
 
 ![](assets/images/case-2/maze.png)
 
+---
+
 ## Proposed solution
 Utilize a step-by-step pattern to avoid confusing users about the existence of two separate yet sequential payments.
 ![](assets/images/case-2/solution.png)
 
-
-## Figma protype
-I designed the entire re-enrollment flow, including other pending items beyond financial obligations. However, for the purpose of this case study, I have hidden the remaining pending items for simplification.
+---
