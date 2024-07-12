@@ -10,7 +10,7 @@ Brazilian, obtaining Spanish citizenship by end-2024.
 Relevant experience from recent years
 <br><br>
 
-<a href="case-1.html" class="video-intro">
+<a href="case-1" class="video-intro">
     <video autoplay loop muted>
         <source src="assets/images/case-1/video.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -19,11 +19,11 @@ Relevant experience from recent years
 
 ### Premium Posgraduate Redesign
 In this redesign, the navigation flow and the entire course purchase process were completely renewed.
-[View case](case-1.html)
+[View case](case-1)
 
 ---
 
-<a href="case-2.html" class="video-intro">
+<a href="case-2" class="video-intro">
     <video autoplay loop muted>
         <source src="assets/images/case-2/video.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -32,7 +32,7 @@ In this redesign, the navigation flow and the entire course purchase process wer
 
 ### Payment of outstanding fees
 Streamlining the process for students to pay outstanding tuition fees before re-enrolling for the next term.
-[View case](case-2.html)
+[View case](case-2)
 
 ## More about me
 
