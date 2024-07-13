@@ -185,15 +185,8 @@ hr {
 }
 
 .social {
-    @media (min-width: $tablet) {
-        width: 88%;
-        display: inline-flex;
-        justify-content: space-between;
-    }
-}
-
-.avatar {
-    position: absolute;
-    width: 200px;
-    height: 200px;
+   a {
+    padding-bottom: 16px;
+    width: fit-content;
+   }
 }
