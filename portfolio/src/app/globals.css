@@ -21,3 +21,21 @@
     text-wrap: balance;
   }
 }
+
+html {
+  @apply scroll-smooth;
+}
+
+section {
+  @apply min-h-screen;
+}
+
+@layer components {
+  .content-container {
+    @apply max-w-[1440px] w-full mx-auto px-6;
+  }
+
+  .btn-primary {
+    @apply px-4 py-2 bg-green-800 text-white rounded hover:bg-green-900 hover:text-white transition-colors duration-200 ease-in;
+  }
+}
