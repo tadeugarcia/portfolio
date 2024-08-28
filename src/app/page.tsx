@@ -2,19 +2,32 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <section className="h-screen">
-        <p>Tadeu Garcia</p>
-        <h1>Senior Product Designer based in Rio de Janeiro</h1>
-        <p>
-          Experienced designer specializing in creating digital products for e-commerce, marketplaces, 
-          billing and payment systems, as well as back-office applications. Skilled in developing web components 
-          for desktop and mobile platforms, with expertise in Material Design for app interfaces.
-        </p>
-        <p>Brazilian, obtaining Spanish citizenship by end-2024.</p>
+    <main>
+      <section className="bg-slate-950">
+        <div className="mb-7 text-center">
+          <p className="text-7xl font-medium text-slate-50 mb-2">Tadeu Garcia</p>
+          <h1 className="font-light text-slate-300">Senior Product Designer based in Rio de Janeiro 🌴</h1>
+        </div>
+        <div className="flex space-x-2">
+          <span className="chip">
+            b2b/b2c SaaS
+          </span>
+          <span className="chip">
+            financial Services
+          </span>
+          <span className="chip">
+           payment systems
+          </span>
+          <span className="chip">
+            e-commerce
+          </span>
+          <span className="chip">
+            marketplace
+          </span>
+        </div>
       </section>
 
-      <section className="h-screen">
+      <section>
         <h2>Case studies</h2>
         <p>Relevant experience from recent years</p>
 
@@ -45,7 +58,7 @@ export default function Home() {
         <a href="case-2">View case</a>
       </section>
       
-      <section className="h-screen">
+      <section>
         <h2>Acessibility and code </h2>
         
         <p>What sets me apart is a long-standing interest in understanding the background workings of interfaces.</p>
@@ -54,7 +67,7 @@ export default function Home() {
         incredible learning with him.</p>
       </section>
 
-      <section className="h-screen">
+      <section>
         <h2>More about me </h2>
         
         <ul>
@@ -65,7 +78,7 @@ export default function Home() {
         </ul>
       </section>
 
-      <section className="h-screen">
+      <section>
         <h2>You can find me over here </h2>
 
         <div className="social">
