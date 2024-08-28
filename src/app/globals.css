@@ -27,13 +27,33 @@ html {
 }
 
 section {
-  @apply min-h-screen flex flex-col items-center justify-center;
+  @apply h-screen flex flex-col items-center justify-center;
 }
 
 @layer components {
-  .chip {
-    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-light border border-blue-900 text-blue-100 bg-slate-900;
+  .chip { @apply
+    inline-flex items-center px-3 py-1
+    text-sm font-normal text-slate-400
+    rounded-full
+    border border-slate-800
+  ;}
+  
+  .case-card{ @apply
+    flex flex-row items-center p-12 
+    font-light text-white
+    border rounded-lg border-slate-700
+    bg-slate-900 shadow-2xl
+    hover:shadow-blue-900/10  hover:border-blue-900 hover:bg-slate-950
+    transition duration-300 ease-in-out 
+  ;}
+  .case-title {
+    @apply font-bold text-xl;
   }
+  .case-button {
+    @apply inline-flex items-center mt-4 px-4 py-2 rounded-lg text-base font-medium border border-slate-400 text-slate-200; 
+  }
+
+
   .content-container {
     @apply max-w-[1440px] w-full mx-auto px-6;
   }

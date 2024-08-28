@@ -1,12 +1,13 @@
 import Image from "next/image";
+import reenrollment from '/public/re-enrollment/case.png';
 
 export default function Home() {
   return (
-    <main>
-      <section className="bg-slate-950">
+    <main className="bg-slate-950">
+      <section>
         <div className="mb-7 text-center">
           <p className="text-7xl font-medium text-slate-50 mb-2">Tadeu Garcia</p>
-          <h1 className="font-light text-slate-300">Senior Product Designer based in Rio de Janeiro 🌴</h1>
+          <h1 className="font-light text-slate-300"><span className="font-bold">Senior Product Designer</span> based in Rio de Janeiro🌴</h1>
         </div>
         <div className="flex space-x-2">
           <span className="chip">
@@ -28,34 +29,44 @@ export default function Home() {
       </section>
 
       <section>
-        <h2>Case studies</h2>
-        <p>Relevant experience from recent years</p>
+          <div className="mb-20 text-white">
+            <h2 className="text-5xl text-white">Case studies</h2>
+            <p>Relevant experience from recent years</p>
+          </div>
 
-        <a href="case-1" className="video-intro">
-          <video>
-            <source src="@public/posgraduate/video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </a>
+          <div className="flex flex-col space-y-10">
+            <a className="case-card" href="re-enrollment">
+              <Image src={reenrollment} alt="" width={500} height={300} />
 
-        <h3>Premium Posgraduate Redesign</h3>
-        
-        <p>In this redesign, the navigation flow and the entire course purchase process were completely renewed.
-        
-        <a href="case-1">View case</a></p>
-        
-        <a href="case-2" className="video-intro">
-          <video>
-            <source src="@public/re-enrollment/video.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </a>
-        
-        <h3>Payment of outstanding fees</h3>
-        
-        <p>Streamlining the process for students to pay outstanding tuition fees before re-enrolling for&nbsp;the&nbsp;next&nbsp;term.</p>
-        
-        <a href="case-2">View case</a>
+              <div>
+                <h3 className="case-title">Payment of outstanding fees</h3>
+                <p>Streamlining the process for students to pay outstanding tuition fees before re-enrolling for&nbsp;the&nbsp;next&nbsp;term.</p>
+                <span className="case-button">View case</span>
+
+                <div className="mt-20 flex space-x-2">
+                  <span className="chip">
+                    b2b/b2c SaaS
+                  </span>
+                  <span className="chip">
+                    financial Services
+                  </span>
+                  <span className="chip">
+                  payment systems
+                  </span>
+                </div>
+              </div>
+            </a>
+            
+            <a className="case-card" href="re-enrollment">
+              <Image src={reenrollment} alt="" width={500} height={300} />
+
+              <div>
+                <h3 className="case-title">Payment of outstanding fees</h3>
+                <p>Streamlining the process for students to pay outstanding tuition fees before re-enrolling for&nbsp;the&nbsp;next&nbsp;term.</p>
+                <span className="case-button">View case</span>
+              </div>
+            </a>
+          </div>        
       </section>
       
       <section>
