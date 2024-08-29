@@ -41,7 +41,6 @@ export default function Home() {
               <div>
                 <h3 className="case-title">Payment of outstanding fees</h3>
                 <p>Streamlining the process for students to pay outstanding tuition fees before re-enrolling for&nbsp;the&nbsp;next&nbsp;term.</p>
-                <span className="case-button">View case</span>
 
                 <div className="mt-20 flex space-x-2">
                   <span className="chip">
@@ -63,7 +62,6 @@ export default function Home() {
               <div>
                 <h3 className="case-title">Payment of outstanding fees</h3>
                 <p>Streamlining the process for students to pay outstanding tuition fees before re-enrolling for&nbsp;the&nbsp;next&nbsp;term.</p>
-                <span className="case-button">View case</span>
               </div>
             </a>
           </div>        
