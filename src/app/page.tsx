@@ -28,14 +28,14 @@ export default function Home() {
         </div>
 
         <video width="720" height="480" controls controlsList="nodownload" disablePictureInPicture preload="auto" 
-        className="mt-12 rounded-xl outline outline-offset offset-slate-50 shadow-2xl shadow-blue-900/70">
+        className="mt-12 rounded-xl shadow-2xl shadow-blue-900/50">
           <source src="intro.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
-        <a href="#case-studies" className="animate-pulse mt-20 px-3 py-2 flex space-x-2 border rounded-lg border-blue-900 text-white font-light bg-blue-950">
+        <a href="#case-studies" className="animate-pulse mt-20 px-3 py-2 flex space-x-2 border rounded-lg border-blue-950 text-white font-light bg-slate-900">
           <span>View my case studies</span>
-          </a>
+        </a>
       </section>
 
       <section id="case-studies">
@@ -81,16 +81,16 @@ export default function Home() {
         <div className="basis-1/3 justify-center">
           <h2 className="title mb-10">About me</h2>
           <div className="flex flex-col text-3xl font-extralight underline decoration-1 space-y-4">
-            <a href="https://www.linkedin.com/in/garciatadeu/" target="_blank" className="hover:text-blue-500 transition duration-300 ease-in-out">
+            <a href="https://www.linkedin.com/in/garciatadeu/" target="_blank" className="w-fit hover:text-blue-500 transition duration-300 ease-in-out">
               LinkedIn
             </a>
-            <a href="assets/resume/Tadeu_Garcia_Resume.pdf" target="_blank" className="hover:text-blue-500 transition duration-300 ease-in-out">
+            <a href="assets/resume/Tadeu_Garcia_Resume.pdf" target="_blank" className="w-fit hover:text-blue-500 transition duration-300 ease-in-out">
               Resume
             </a>
-            <a href="mailto:tadeugarcia.92@gmail.com" className="hover:text-blue-500 transition duration-300 ease-in-out">
+            <a href="mailto:tadeugarcia.92@gmail.com" className="w-fit hover:text-blue-500 transition duration-300 ease-in-out">
               tadeugarcia.92@gmail.com
             </a>
-            <a href="tel:+55 21 97997 6655" className="hover:text-blue-500 transition duration-300 ease-in-out">
+            <a href="tel:+55 21 97997 6655" className="w-fit hover:text-blue-500 transition duration-300 ease-in-out">
               +55 21 97997 6655
             </a>
           </div>
@@ -98,7 +98,7 @@ export default function Home() {
 
         <div className="basis-2/3">
           <div className="grid grid-cols-2 space-x-5 text-white">
-            <div className="p-12 border border-slate-600 rounded-xl">
+            <div className="p-12 border rounded-xl border-slate-600 bg-gray-950/75">
               <h2 className="font-bold text-xl mb-5"> <span className="underline-blue">Code</span> and <span className="underline decoration-pink-500">Acessibility</span></h2>
               
               <div className="font-light space-y-5">
@@ -110,7 +110,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="p-12 border border-slate-600 rounded-xl">
+            <div className="p-12 border rounded-xl border-slate-600 bg-gray-950/75">
               <h2 className="font-bold text-xl mb-5">More about Tadeu</h2>
               
               <ul className="font-light space-y-5 list-disc pl-4">
