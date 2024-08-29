@@ -11,9 +11,6 @@ export default function Home() {
         </div>
         <div className="flex space-x-2">
           <span className="chip">
-            b2b/b2c SaaS
-          </span>
-          <span className="chip">
             financial services
           </span>
           <span className="chip">
@@ -23,7 +20,10 @@ export default function Home() {
             e-commerce
           </span>
           <span className="chip">
-            marketplace
+            b2b and b2c saas
+          </span>
+          <span className="chip">
+            front-end
           </span>
         </div>
 
@@ -54,7 +54,7 @@ export default function Home() {
                 payment systems
                 </li>
                 <li className="chip">
-                  b2b2c SaaS
+                  b2b2c saas
                 </li>
               </ul>
 
@@ -81,16 +81,24 @@ export default function Home() {
         <div className="basis-1/3 justify-center">
           <h2 className="title mb-10">About me</h2>
           <div className="flex flex-col text-3xl font-extralight underline decoration-1 space-y-4">
-            <a href="https://www.linkedin.com/in/garciatadeu/" target="_blank" className="w-fit hover:text-blue-500 transition duration-300 ease-in-out">
+            <a href="https://www.linkedin.com/in/garciatadeu/" target="_blank" className="about-link">
+              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"><path d="M247.54-268.46 220-296l403.23-404H251.54v-40h440v440h-40v-371.69l-404 403.23Z"/></svg>
               LinkedIn
             </a>
-            <a href="assets/resume/Tadeu_Garcia_Resume.pdf" target="_blank" className="w-fit hover:text-blue-500 transition duration-300 ease-in-out">
+            <a href="https://github.com/tadeugarcia" target="_blank" className="about-link">
+              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"><path d="M247.54-268.46 220-296l403.23-404H251.54v-40h440v440h-40v-371.69l-404 403.23Z"/></svg>
+              GitHub
+            </a>
+            <a href="Tadeu Garcia - Resume.pdf" target="_blank" className="about-link">
+              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"><path d="M247.54-268.46 220-296l403.23-404H251.54v-40h440v440h-40v-371.69l-404 403.23Z"/></svg>
               Resume
             </a>
-            <a href="mailto:tadeugarcia.92@gmail.com" className="w-fit hover:text-blue-500 transition duration-300 ease-in-out">
+            <a href="mailto:tadeugarcia.92@gmail.com" className="about-link">
+              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"><path d="M247.54-268.46 220-296l403.23-404H251.54v-40h440v440h-40v-371.69l-404 403.23Z"/></svg>
               tadeugarcia.92@gmail.com
             </a>
-            <a href="tel:+55 21 97997 6655" className="w-fit hover:text-blue-500 transition duration-300 ease-in-out">
+            <a href="tel:+55 21 97997 6655" className="about-link">
+              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"><path d="M247.54-268.46 220-296l403.23-404H251.54v-40h440v440h-40v-371.69l-404 403.23Z"/></svg>
               +55 21 97997 6655
             </a>
           </div>
@@ -98,8 +106,8 @@ export default function Home() {
 
         <div className="basis-2/3">
           <div className="grid grid-cols-2 space-x-5 text-white">
-            <div className="p-12 border rounded-xl border-slate-600 bg-gray-950/75">
-              <h2 className="font-bold text-xl mb-5"> <span className="underline-blue">Code</span> and <span className="underline decoration-pink-500">Acessibility</span></h2>
+            <div className="p-10 border rounded-xl border-slate-600 bg-gray-950/75">
+              <h2 className="font-bold text-2xl mb-5"> <span className="underline-blue">Code</span> and <span className="underline decoration-pink-500">Acessibility</span></h2>
               
               <div className="font-light space-y-5">
                 <p>What sets me apart is my deep, <strong className="underline-blue">long-standing interest in understanding the inner workings of interfaces.</strong> Since I began working with interfaces in 2013, I've always wanted to <strong className="underline-blue">collaborate closely with developers.</strong> In 2016, I took this passion further by starting to work on front-end development.</p>
@@ -110,15 +118,15 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="p-12 border rounded-xl border-slate-600 bg-gray-950/75">
-              <h2 className="font-bold text-xl mb-5">More about Tadeu</h2>
+            <div className="p-10 border rounded-xl border-slate-600 bg-gray-950/75">
+              <h2 className="font-bold text-2xl mb-5">More about Tadeu</h2>
               
-              <ul className="font-light space-y-5 list-disc pl-4">
-                <li>Brazilian, obtaining Spanish (EU) citizenship by end-2024.</li>
-                <li>AI enthusiast, using it daily for work and personal tasks.</li>
-                <li>To proceed with the hipster designer checklist, I'm vegetarian.</li>
-                <li>My current hobbies are swimming, board sports, yoga and meditation.</li>
-                <li>Started designing in 2007 with an online forum signature contest.</li>
+              <ul className="font-light space-y-5">
+                <li>🌍 Brazilian, obtaining Spanish (EU) citizenship by end-2024.</li>
+                <li>🤖 AI enthusiast, using it daily for work and personal tasks.</li>
+                <li>🌱 To proceed with the hipster designer checklist, I'm vegetarian.</li>
+                <li>🏊‍♂️ My current hobbies are swimming, board sports, yoga and meditation.</li>
+                <li>🏆 Started designing in 2007 with an online forum signature contest.</li>
               </ul>
             </div>
           </div>
