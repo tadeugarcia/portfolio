@@ -4,8 +4,8 @@ import reenrollment from '/public/re-enrollment/case.png';
 export default function Home() {
   return (
     <main>
-      <section>
-        <div className="mb-7 text-center">
+      <section className="space-y-7">
+        <div className="text-center">
           <p className="title">Tadeu Garcia</p>
           <h1 className="font-light text-slate-300"><span className="font-bold">Senior Product Designer</span> based in Rio de Janeiro🌴</h1>
         </div>
@@ -28,18 +28,18 @@ export default function Home() {
         </div>
 
         <video width="720" height="480" controls controlsList="nodownload" disablePictureInPicture preload="auto" 
-        className="mt-12 rounded-xl shadow-2xl shadow-blue-900/50">
+        className="rounded-xl shadow-2xl shadow-blue-900/50">
           <source src="intro.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
-        <a href="#case-studies" className="animate-pulse mt-20 px-3 py-2 flex space-x-2 border rounded-lg border-blue-950 text-white font-light bg-slate-900">
+        <a href="#case-studies" className="animate-pulse px-3 py-2 flex space-x-2 border rounded-lg border-blue-950 text-white font-light bg-slate-900">
           <span>View my case studies</span>
         </a>
       </section>
 
-      <section id="case-studies">
-          <div className="mb-20 text-white text-center">
+      <section id="case-studies" className="space-y-8">
+          <div className="text-white text-center">
             <h2 className="title">Case studies</h2>
             <p>Relevant experience from recent years</p>
           </div>
@@ -80,7 +80,7 @@ export default function Home() {
       <section id="about me" className="flex flex-row text-white">        
         <div className="basis-1/3 justify-center">
           <h2 className="title mb-10">About me</h2>
-          <div className="flex flex-col text-3xl font-extralight underline decoration-1 space-y-4">
+          <div className="flex flex-col text-3xl font-extralight underline decoration-2 space-y-4">
             <a href="https://www.linkedin.com/in/garciatadeu/" target="_blank" className="about-link">
               <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"><path d="M247.54-268.46 220-296l403.23-404H251.54v-40h440v440h-40v-371.69l-404 403.23Z"/></svg>
               LinkedIn
