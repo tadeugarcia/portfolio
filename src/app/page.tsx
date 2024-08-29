@@ -26,6 +26,11 @@ export default function Home() {
             marketplace
           </span>
         </div>
+
+        <video width="720" height="480" controls preload="auto" loading className="mt-12 rounded-xl">
+          <source src="intro.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
       </section>
 
       <section>

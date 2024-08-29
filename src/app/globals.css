@@ -27,7 +27,7 @@ html {
 }
 
 section {
-  @apply h-screen flex flex-col items-center justify-center;
+  @apply min-h-screen flex flex-col items-center justify-center;
 }
 
 @layer components {
