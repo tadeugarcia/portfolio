@@ -45,7 +45,7 @@ export default function Home() {
           </div>
 
           <div className="flex flex-row space-x-5">
-            <a className="case-card" href="re-enrollment">
+            <a className="case-card" href="reenrollment">
               <ul className="flex space-x-2">
                 <li className="chip">
                   financial services
