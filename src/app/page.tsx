@@ -1,5 +1,6 @@
 import Image from "next/image";
 import reenrollment from '/public/re-enrollment/case.png';
+import posgraduate from '/public/posgraduate/case.png';
 
 export default function Home() {
   return (
@@ -7,35 +8,21 @@ export default function Home() {
       <section className="space-y-7">
         <div className="text-center">
           <p className="title">Tadeu Garcia</p>
-          <h1 className="font-light text-slate-300"><span className="font-bold">Senior Product Designer</span> based in Rio de Janeiro🌴</h1>
+          <h1 className="font-light text-zinc-300"><span className="font-bold">Senior Product Designer</span> based in Rio de Janeiro🌴</h1>
         </div>
         <div className="flex space-x-2">
-          <span className="chip">
-            financial services
-          </span>
-          <span className="chip">
-           payment systems
-          </span>
-          <span className="chip">
-            e-commerce
-          </span>
-          <span className="chip">
-            b2b and b2c saas
-          </span>
-          <span className="chip">
-            front-end
-          </span>
+          <span className="chip">financial services</span>
+          <span className="chip">payment systems</span>
+          <span className="chip">e-commerce</span>
+          <span className="chip">b2b and b2c saas</span>
+          <span className="chip">front-end</span>
         </div>
 
         <video width="720" height="480" controls controlsList="nodownload" disablePictureInPicture preload="auto" 
-        className="rounded-xl shadow-2xl shadow-blue-900/50">
+          className="rounded-2xl shadow-2xl shadow-zinc-500/40 border border-zinc-300">
           <source src="intro.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
-
-        <a href="#case-studies" className="animate-pulse px-3 py-2 flex space-x-2 border rounded-lg border-blue-950 text-white font-light bg-slate-900">
-          <span>View my case studies</span>
-        </a>
       </section>
 
       <section id="case-studies" className="space-y-8">
@@ -45,33 +32,29 @@ export default function Home() {
           </div>
 
           <div className="flex flex-row space-x-5">
-            <a className="case-card" href="reenrollment">
+            <a className="case-card" href="/re-enrollment">
               <ul className="flex space-x-2">
-                <li className="chip">
-                  financial services
-                </li>
-                <li className="chip">
-                payment systems
-                </li>
-                <li className="chip">
-                  b2b2c saas
-                </li>
+                <li className="chip">financial services</li>
+                <li className="chip">payment systems</li>
+                <li className="chip">b2b2c saas</li>
               </ul>
-
               <Image src={reenrollment} alt="" width={500} height={300} />
-
               <div>
                 <h3 className="case-title">Payment of outstanding fees</h3>
-                <p>How I designed the re-enrollment flow, automating financial processes and <span className="underline-blue">boosting re-enrollment</span> and debt clearance.</p>
+                <p>How I designed the re-enrollment flow, automating financial processes and <span className="underline-emerald">boosting re-enrollment</span> and debt clearance.</p>
               </div>
             </a>
-            
-            <a className="case-card" href="re-enrollment">
-              <Image src={reenrollment} alt="" width={500} height={300} />
 
+            <a className="case-card" href="/posgraduate">
+              <ul className="flex space-x-2">
+                <li className="chip">financial services</li>
+                <li className="chip">payment systems</li>
+                <li className="chip">b2b2c saas</li>
+              </ul>
+              <Image src={posgraduate} alt="" width={500} height={300} />
               <div>
                 <h3 className="case-title">Payment of outstanding fees</h3>
-                <p>Streamlining the process for students to pay outstanding tuition fees before re-enrolling for&nbsp;the&nbsp;next&nbsp;term.</p>
+                <p>How I designed the re-enrollment flow, automating financial processes and <span className="underline-emerald">boosting re-enrollment</span> and debt clearance.</p>
               </div>
             </a>
           </div>        
@@ -80,25 +63,25 @@ export default function Home() {
       <section id="about me" className="flex flex-row text-white">        
         <div className="basis-1/3 justify-center">
           <h2 className="title mb-10">About me</h2>
-          <div className="flex flex-col text-3xl font-extralight underline decoration-2 space-y-4">
-            <a href="https://www.linkedin.com/in/garciatadeu/" target="_blank" className="about-link">
-              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"><path d="M247.54-268.46 220-296l403.23-404H251.54v-40h440v440h-40v-371.69l-404 403.23Z"/></svg>
+          <div className="flex flex-col space-y-4">
+            <a href="https://www.linkedin.com/in/garciatadeu/" target="_blank" className="btn-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M247.54-268.46 220-296l403.23-404H251.54v-40h440v440h-40v-371.69l-404 403.23Z"/></svg>
               LinkedIn
             </a>
-            <a href="https://github.com/tadeugarcia" target="_blank" className="about-link">
-              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"><path d="M247.54-268.46 220-296l403.23-404H251.54v-40h440v440h-40v-371.69l-404 403.23Z"/></svg>
+            <a href="https://github.com/tadeugarcia" target="_blank" className="btn-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M247.54-268.46 220-296l403.23-404H251.54v-40h440v440h-40v-371.69l-404 403.23Z"/></svg>
               GitHub
             </a>
-            <a href="Tadeu Garcia - Resume.pdf" target="_blank" className="about-link">
-              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"><path d="M247.54-268.46 220-296l403.23-404H251.54v-40h440v440h-40v-371.69l-404 403.23Z"/></svg>
+            <a href="Tadeu Garcia - Resume.pdf" target="_blank" className="btn-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M247.54-268.46 220-296l403.23-404H251.54v-40h440v440h-40v-371.69l-404 403.23Z"/></svg>
               Resume
             </a>
-            <a href="mailto:tadeugarcia.92@gmail.com" className="about-link">
-              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"><path d="M247.54-268.46 220-296l403.23-404H251.54v-40h440v440h-40v-371.69l-404 403.23Z"/></svg>
+            <a href="mailto:tadeugarcia.92@gmail.com" className="btn-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M247.54-268.46 220-296l403.23-404H251.54v-40h440v440h-40v-371.69l-404 403.23Z"/></svg>
               tadeugarcia.92@gmail.com
             </a>
-            <a href="tel:+55 21 97997 6655" className="about-link">
-              <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px"><path d="M247.54-268.46 220-296l403.23-404H251.54v-40h440v440h-40v-371.69l-404 403.23Z"/></svg>
+            <a href="tel:+55 21 97997 6655" className="btn-link">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M247.54-268.46 220-296l403.23-404H251.54v-40h440v440h-40v-371.69l-404 403.23Z"/></svg>
               +55 21 97997 6655
             </a>
           </div>
@@ -106,8 +89,12 @@ export default function Home() {
 
         <div className="basis-2/3">
           <div className="grid grid-cols-2 space-x-5 text-white">
-            <div className="p-10 border rounded-xl border-slate-600 bg-gray-950/75">
-              <h2 className="font-bold text-2xl mb-5"> <span className="underline-blue">Code</span> and <span className="underline decoration-pink-500">Acessibility</span></h2>
+            <div className="p-10 border rounded-2xl border-zinc-600">
+              <h2 className="font-bold text-2xl mb-5"> 
+                <span className="underline-blue">Code</span> 
+                and 
+                <span className="underline decoration-pink-500">Acessibility</span>
+              </h2>
               
               <div className="font-light space-y-5">
                 <p>What sets me apart is my deep, <strong className="underline-blue">long-standing interest in understanding the inner workings of interfaces.</strong> Since I began working with interfaces in 2013, I've always wanted to <strong className="underline-blue">collaborate closely with developers.</strong> In 2016, I took this passion further by starting to work on front-end development.</p>
@@ -118,7 +105,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="p-10 border rounded-xl border-slate-600 bg-gray-950/75">
+            <div className="p-10 border rounded-2xl border-zinc-600">
               <h2 className="font-bold text-2xl mb-5">More about Tadeu</h2>
               
               <ul className="font-light space-y-5">
@@ -130,7 +117,7 @@ export default function Home() {
               </ul>
             </div>
           </div>
-          </div>
+        </div>
       </section>
     </main>
   );

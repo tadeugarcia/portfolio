@@ -1,0 +1,51 @@
+main {
+  @apply
+  w-[800px] px-0 py-20 text-white
+}
+
+hr {
+  @apply
+  my-10
+  border-slate-500
+}
+
+h1 {
+  @apply
+  mb-10
+  text-7xl
+}
+
+h2 {
+  @apply
+  mb-5
+  text-2xl font-bold
+}
+
+p {
+  @apply
+  mb-5
+  text-xl font-light
+}
+
+li {
+  @apply
+  text-base font-light
+}
+
+mark {
+  @apply
+  px-1
+  bg-emerald-900
+  text-white
+}
+
+figcaption {
+  @apply
+  text-sm
+}
+
+footer {
+  @apply
+  pt-10
+  border-t border-slate-500
+}
