@@ -55,7 +55,7 @@ export default function Home() {
               <Image src={posgraduate} alt="" width={500} height={300} />
               <div>
                 <h3 className="case-title">Premium posgraduate redesign</h3>
-                <p>I redesigned the postgraduate course purchase flow with a premium UI, <span className="underline decoration-2 decoration-teal-500">achieving 57.14% faster</span> navigation.</p>
+                <p>I redesigned the postgraduate course purchase flow with a premium UI, <span className="underline decoration-2 decoration-teal-500">achieving 57.14% faster navigation.</span></p>
               </div>
             </a>
           </div>        
