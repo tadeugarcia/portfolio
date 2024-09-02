@@ -27,9 +27,19 @@ p {
   text-xl font-light
 }
 
+ul {
+  @apply
+  pl-5
+}
+
 li {
   @apply
-  text-base font-light
+  list-disc text-xl font-light
+}
+
+li strong {
+  @apply
+  font-bold
 }
 
 mark {
@@ -39,9 +49,19 @@ mark {
   text-white
 }
 
+figure {
+  @apply
+  pb-10
+}
+
+figure img {
+  @apply
+  rounded-2xl shadow-2xl
+}
+
 figcaption {
   @apply
-  text-sm
+  pt-2 text-sm 
 }
 
 footer {

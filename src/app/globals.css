@@ -23,7 +23,7 @@
 }
 
 html {
-  @apply scroll-smooth bg-zinc-950
+  @apply scroll-smooth bg-gray-950
 }
 
 main {
@@ -43,15 +43,15 @@ section {
     inline-flex items-center px-3 py-1
     text-sm font-normal text-zinc-300
     rounded-full
-    border border-emerald-700 
-    shadow-2xl shadow-emerald-500/40
+    border border-zinc-700 
+    shadow-2xl shadow-zinc-500/40
   }
   
   .case-card { @apply
     flex flex-col w-1/2 p-10 items-center space-y-10 
     font-light text-white
-    border rounded-2xl border-zinc-400 hover:border-emerald-500
-    shadow-2xl shadow-zinc-500/40 hover:shadow-emerald-500/40
+    border rounded-2xl border-zinc-400
+    shadow-2xl shadow-zinc-500/40 
     hover:opacity-75 transition duration-300 ease-in-out
   }
 
@@ -61,10 +61,6 @@ section {
 
   .underline-blue {
     @apply underline decoration-2 decoration-blue-500
-  }
-
-  .underline-emerald {
-    @apply underline decoration-2 decoration-emerald-500
   }
   
   .btn-link {

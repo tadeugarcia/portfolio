@@ -1,6 +1,5 @@
 # Payment of outstanding fees
-Optimizing the process for students to pay outstanding tuition fees before re-enrolling for the next term.
-
+How I designed the re-enrollment flow, automating financial processes and <mark>boosting debt clearance and re-enrollments</mark>.
 - **Timeline** 1 month.
 - **My role** Product Designer, UX Researcher, Recruiter.
 - **Team** The product owner and I.
@@ -9,41 +8,45 @@ Optimizing the process for students to pay outstanding tuition fees before re-en
 ---
 
 ## Start the project
-After this project every re-enrollment was doing manually.
-I designed the <mark>entire re-enrollment flow</mark>, including the part showcased in this case study as well as the back-office configuration section.
-
-<small>Observation: Some elements and colors appearing on the pages are pre-existing components from the Design System, which I utilized in the best possible layout. The cards "Proceed to Payment" or "Proceed to Negotiation" were designed by me and are not part of the Design System.</small>
+After this project, every re-enrollment was done manually with human contact.
 
 <figure>
-  <img src="re-enrollment/new-screens-1.png" />
-  <figcaption>Simplified payment journey for outstanding fees for re-enrollment.</figcaption>
+  <img src="re-enrollment/frustrated-student.png" className="shadow-yellow-500/40" />
+  <figcaption>Users needed to contact the call center to renew their enrollment.</figcaption>
 </figure>
 
-![Other screens of the re-enrollment journey.](re-enrollment/new-screens-2.png)
-<small>Other screens of the re-enrollment journey.</small>
+I designed the <mark>entire re-enrollment flow</mark>, including the part showcased in this case study as well as the back-office configuration section.
+
+<figure>
+  <img src="re-enrollment/new-screens.png" className="shadow-purple-500/40" />
+  <figcaption>The new interfaces allow users to renew their enrollment through the student portal.</figcaption>
+</figure>
 
 ---
 
-## Clarifying payment vs negotiation flow
+## Problem: Clarifying payment vs negotiation flow
+
 The stakeholders were uncertain if users would understand the difference between choosing "Proceed to Payment" or "Proceed to Negotiation".
-  
-![](re-enrollment/problem.png)
 
----
-
-## Usability Testing
 Using Maze, two unmoderated usability tests were conducted: one with the previous version and one with the new version, to test navigation fluidity and differences.
 
 One of the post-test questions validated what the journey recordings also indicated: <mark>100% of participants said they felt very confident or confident about choosing</mark> between "Proceed to Payment" or "Proceed to Negotiation", and the subsequent page aligned with their expectations from that choice.
 
-Regarding participant recruitment, it wasn't too difficult as these users were employees of the company and students from a partner university.
-
 <mark>However, an unexpected problem arose:</mark> in addition to some misclicks, some users reported confusion on this screen due to two payment boxes appearing consecutively.
 
-![](re-enrollment/maze.png)
+<figure>
+  <img src="re-enrollment/maze.png" className="shadow-blue-500/40" />
+  <figcaption>Maze test showed users were confused by two consecutive payment boxes.</figcaption>
+</figure>
 
 ---
 
 ## Proposed solution
 Utilize a step-by-step pattern to avoid confusing users about the existence of two separate yet sequential payments.
-![](re-enrollment/solution.png)
+
+<figure>
+  <img src="re-enrollment/result.png" className="shadow-purple-500/40" />
+  <figcaption>A responsive solution to the missclick issue found in usability testing.</figcaption>
+</figure>
+
+I don't have the exact numbers yet, but according to the responsible department, after this feature was implemented, <mark>the number of outstanding payments and re-enrollments increased significantly.</mark>

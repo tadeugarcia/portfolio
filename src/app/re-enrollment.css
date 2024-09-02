@@ -1,0 +1,13 @@
+body {
+  background-color: hsl(274.29deg 85.37% 4%);
+}
+
+mark {
+  @apply
+  bg-purple-950
+}
+
+.btn-link {
+  @apply
+  hover:text-purple-500 hover:fill-purple-500
+}
