@@ -19,7 +19,7 @@ export default function Home() {
         </div>
 
         <video width="720" height="480" controls controlsList="nodownload" disablePictureInPicture preload="auto" 
-          className="rounded-2xl shadow-2xl shadow-zinc-500/40 border border-zinc-300">
+          className="rounded-2xl shadow-2xl shadow-zinc-500/40">
           <source src="intro.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
@@ -32,29 +32,30 @@ export default function Home() {
           </div>
 
           <div className="flex flex-row space-x-5">
-            <a className="case-card" href="/re-enrollment">
+            <a className="case-card hover:border-purple-500 hover:shadow-purple-500/40" href="/re-enrollment">
               <ul className="flex space-x-2">
-                <li className="chip">financial services</li>
-                <li className="chip">payment systems</li>
-                <li className="chip">b2b2c saas</li>
+                <li className="chip">usability testing</li>
+                <li className="chip">user behavior analysis</li>
+                <li className="chip">ui + prototyping</li>
               </ul>
               <Image src={reenrollment} alt="" width={500} height={300} />
               <div>
                 <h3 className="case-title">Payment of outstanding fees</h3>
-                <p>How I designed the re-enrollment flow, automating financial processes and <span className="underline-emerald">boosting re-enrollment</span> and debt clearance.</p>
+                <p>How I designed the re-enrollment flow, automating financial processes and <span className="underline decoration-2 decoration-purple-500">boosting debt clearance and re-enrollments.</span></p>
               </div>
             </a>
 
-            <a className="case-card" href="/posgraduate">
+            <a className="case-card hover:border-teal-500 hover:shadow-teal-500/40" href="/posgraduate">
               <ul className="flex space-x-2">
-                <li className="chip">financial services</li>
-                <li className="chip">payment systems</li>
-                <li className="chip">b2b2c saas</li>
+                <li className="chip">desk research</li>
+                <li className="chip">usability testing</li>
+                <li className="chip">design system</li>
+                <li className="chip">ui + prototyping</li>
               </ul>
               <Image src={posgraduate} alt="" width={500} height={300} />
               <div>
-                <h3 className="case-title">Payment of outstanding fees</h3>
-                <p>How I designed the re-enrollment flow, automating financial processes and <span className="underline-emerald">boosting re-enrollment</span> and debt clearance.</p>
+                <h3 className="case-title">Premium posgraduate redesign</h3>
+                <p>I redesigned the postgraduate course purchase flow with a premium UI, <span className="underline decoration-2 decoration-teal-500">achieving 57.14% faster</span> navigation.</p>
               </div>
             </a>
           </div>        
@@ -91,9 +92,7 @@ export default function Home() {
           <div className="grid grid-cols-2 space-x-5 text-white">
             <div className="p-10 border rounded-2xl border-zinc-600">
               <h2 className="font-bold text-2xl mb-5"> 
-                <span className="underline-blue">Code</span> 
-                and 
-                <span className="underline decoration-pink-500">Acessibility</span>
+                <span className="underline-blue">Code</span> and <span className="underline decoration-pink-500">acessibility</span>
               </h2>
               
               <div className="font-light space-y-5">

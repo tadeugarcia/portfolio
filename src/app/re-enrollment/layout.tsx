@@ -1,11 +1,12 @@
 import "../mdx.css";
+import "../re-enrollment.css";
 
 export default function MdxLayout({ children }: { children: React.ReactNode }) {
     return (
         <main>
             <a href="/" className="fixed left-[40px] btn-link">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m276.85-460 231.69 231.69L480-200 200-480l280-280 28.54 28.31L276.85-500H760v40H276.85Z"/></svg>
-                All work
+                Portfolio overview
             </a>
             <a href="/posgraduate" className="fixed right-[40px] btn-link">
                 Next case
