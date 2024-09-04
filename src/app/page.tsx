@@ -107,7 +107,7 @@ export default function Home() {
               <h2 className="font-bold text-2xl mb-5">More about Tadeu</h2>
               
               <ul className="font-light space-y-5">
-                <li>🌍 Brazilian, obtaining Spanish (EU) citizenship by end-2024.</li>
+                <li>✈️ Brazilian, obtaining Spanish (EU) citizenship by end-2024.</li>
                 <li>🤖 AI enthusiast, using it daily for work and personal tasks.</li>
                 <li>🌱 To proceed with the hipster designer checklist, I&apos;m vegetarian.</li>
                 <li>🏊‍♂️ My current hobbies are swimming, board sports, yoga and meditation.</li>
