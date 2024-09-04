@@ -1,5 +1,10 @@
+import type { Metadata } from "next";
 import "../mdx.css";
 import "../re-enrollment.css";
+
+export const metadata: Metadata = {
+    title: "Tadeu Garcia - Re-enrollment Case"
+};
 
 export default function MdxLayout({ children }: { children: React.ReactNode }) {
     return (
