@@ -45,7 +45,7 @@ export default function Home() {
               </div>
             </a>
 
-            <a className="case-card hover:border-teal-500 hover:shadow-teal-500/40" href="/posgraduate">
+            <a className="case-card hover:border-yellow-500 hover:shadow-yellow-500/40" href="/posgraduate">
               <ul className="flex space-x-2">
                 <li className="chip">desk research</li>
                 <li className="chip">usability testing</li>
@@ -55,7 +55,7 @@ export default function Home() {
               <Image src={posgraduate} alt="" width={500} height={300} />
               <div>
                 <h3 className="case-title">Premium posgraduate redesign</h3>
-                <p>I redesigned the postgraduate course purchase flow with a premium UI, <span className="underline decoration-2 decoration-teal-500">achieving 57.14% faster navigation.</span></p>
+                <p>I redesigned the postgraduate course purchase flow with a premium UI, <span className="underline decoration-2 decoration-yellow-500">achieving 57.14% faster navigation.</span></p>
               </div>
             </a>
           </div>        
