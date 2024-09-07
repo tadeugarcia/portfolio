@@ -1,10 +1,24 @@
+import * as motion from "framer-motion/client";
+
+<motion.div
+  viewport={{ once: true }}
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1, y: [20, 0] }}
+  transition={{ delay: 0, duration: 0.4, ease: "easeOut" }}>
+
 # Payment of outstanding fees
 How I designed the re-enrollment flow, automating financial processes and <mark>boosting debt clearance and re-enrollments</mark>.
 - **Timeline** 1 month.
 - **My role** Product Designer, UX Researcher, Recruiter.
 - **Team** The product owner and I.
 - **Goals** Design a flow that allows students to settle their outstanding debts and complete their re-enrollment.
+</motion.div>
 
+<motion.div
+  viewport={{ once: true }}
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1, y: [20, 0] }}
+  transition={{ delay: 0.4, duration: 0.4, ease: "easeOut" }}>
 ---
 
 ## Start the project
@@ -21,7 +35,13 @@ I designed the <mark>entire re-enrollment flow</mark>, including the part showca
   <img src="re-enrollment/new-screens.png" className="shadow-purple-500/40" />
   <figcaption>The new interfaces allow users to renew their enrollment through the student portal.</figcaption>
 </figure>
+</motion.div>
 
+<motion.div
+  viewport={{ once: true }}
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1, y: [20, 0] }}
+  transition={{ delay: 0.4, duration: 0.4, ease: "easeOut" }}>
 ---
 
 ## Problem: Clarifying payment vs negotiation flow
@@ -38,7 +58,13 @@ One of the post-test questions validated what the journey recordings also indica
   <img src="re-enrollment/maze.png" className="shadow-blue-500/40" />
   <figcaption>Maze test showed users were confused by two consecutive payment boxes.</figcaption>
 </figure>
+</motion.div>
 
+<motion.div
+  viewport={{ once: true }}
+  initial={{ opacity: 0 }}
+  whileInView={{ opacity: 1, y: [20, 0] }}
+  transition={{ delay: 0.4, duration: 0.4, ease: "easeOut" }}>
 ---
 
 ## Proposed solution
@@ -50,3 +76,4 @@ Utilize a step-by-step pattern to avoid confusing users about the existence of t
 </figure>
 
 I don't have the exact numbers yet, but according to the responsible department, after this feature was implemented, <mark>the number of outstanding payments and re-enrollments increased significantly.</mark>
+</motion.div>
