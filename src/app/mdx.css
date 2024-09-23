@@ -12,23 +12,30 @@ hr {
 
 h1 {
   @apply
-  mb-10 m-auto
+  mb-4 m-auto
   w-[800px]
-  text-7xl
+  text-5xl font-bold
 }
 
 h2 {
   @apply
-  mb-5 m-auto
+  mt-16 mb-2 m-auto
   w-[800px]
   text-2xl font-bold
 }
 
 p {
   @apply
-  mb-5 m-auto
+  mb-4 m-auto
   w-[800px]
-  text-xl font-light
+  text-xl font-extralight tracking-wide	
+}
+
+small {
+  @apply
+  m-auto my-4 block
+  w-[800px]
+  text-base font-light
 }
 
 ul {
@@ -51,7 +58,7 @@ mark {
   @apply
   px-1
   bg-emerald-900
-  text-white
+  text-white font-light
 }
 
 figure {
@@ -77,6 +84,31 @@ footer {
   border-t border-slate-500
 }
 
+footer h2 {
+  @apply
+  mt-0
+}
+
+.project-details {
+  @apply  
+  pb-10 mt-10 m-auto
+  w-[800px]
+  border-b border-slate-500
+}
+
+.project-details ul {
+  @apply
+  pl-0
+  grid grid-cols-3
+}
+
+.project-details li {
+  @apply
+  list-none
+  grid
+  text-base
+}
+
 .case-images {
   @apply 
   m-auto
@@ -87,7 +119,6 @@ footer {
 
 .case-images figure {
   @apply
-  mb-32
   h-[600px] w-auto
   hover:scale-110
   transition duration-300 ease-in-out 
