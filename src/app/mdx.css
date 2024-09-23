@@ -87,7 +87,10 @@ footer {
 
 .case-images figure {
   @apply
-  h-[600px]
+  mb-32
+  h-[600px] w-auto
+  hover:scale-110
+  transition duration-300 ease-in-out 
 }
 
 .case-images figcaption {
@@ -98,5 +101,4 @@ footer {
   @apply
   h-full
   border rounded-2xl border-zinc-900
-  hover:scale-125 transition duration-300 ease-in-out
 }
