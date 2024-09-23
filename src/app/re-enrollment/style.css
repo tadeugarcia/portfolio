@@ -1,0 +1,13 @@
+body {
+  background-color: bg-emerald-950;
+}
+
+mark {
+  @apply
+  bg-emerald-800
+}
+
+.btn-link {
+  @apply
+  hover:text-emerald-500 hover:fill-emerald-500
+}

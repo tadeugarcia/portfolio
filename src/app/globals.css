@@ -66,8 +66,8 @@ section {
   .btn-link {
     @apply 
     w-fit flex
-    text-xl underline decoration-0 underline-offset-8 hover:text-emerald-500
-    fill-white hover:fill-emerald-500
+    text-xl underline decoration-0 underline-offset-8 hover:text-neutral-500
+    fill-white hover:fill-neutral-500
     transition duration-300 ease-in-out
   }
 

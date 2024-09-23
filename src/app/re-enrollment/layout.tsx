@@ -1,7 +1,7 @@
 import * as motion from "framer-motion/client";
 import type { Metadata } from "next";
 import "../mdx.css";
-import "../re-enrollment.css";
+import "./style.css";
 
 export const metadata: Metadata = {
     title: "Tadeu Garcia - Re-enrollment Case"

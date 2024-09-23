@@ -1,74 +1,86 @@
-import * as motion from "framer-motion/client";
+"use client";
+import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import reenrollment from '/public/re-enrollment/case.png';
 import posgraduate from '/public/posgraduate/case.png';
 
 export default function Home() {
+  const { scrollYProgress } = useScroll();
   return (
     <main>
       <section className="space-y-7">
-        <div className="text-center">
-          <motion.p          
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, y: [20, 0] }}
-            transition={{ duration: 0.4, ease: "easeOut" }}
-            className="title">
-            Tadeu Garcia
-          </motion.p>
-          <h1 className="text-zinc-300">
-            <motion.span            
+        <motion.div        
+          style={{
+            y: useTransform(scrollYProgress, [0, 1], [0, 400]), 
+            scale: useTransform(scrollYProgress, [0, 1], [1, 2])
+          }}
+          className="text-center">
+            <motion.p          
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1, y: [20, 0]}}
-              transition={{ delay: 0.4, duration: 0.4, ease: "easeOut" }}
-              className="font-bold">
-              Senior Product Designer&nbsp;
-            </motion.span>           
-            <motion.span          
+              animate={{ opacity: 1, y: [20, 0] }}
+              transition={{ duration: 0.4, ease: "easeOut" }}
+              className="title">
+              Tadeu Garcia
+            </motion.p>
+            <motion.h1
+            className="text-zinc-300">
+              <motion.span            
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1, y: [20, 0]}}
+                transition={{ delay: 0.4, duration: 0.4, ease: "easeOut" }}
+                className="font-bold">
+                Senior Product Designer&nbsp;
+              </motion.span>           
+              <motion.span          
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1, x: [20, 0] }}
+                transition={{ delay: 0.8, duration: 0.4, ease: "easeOut" }}
+                className="font-light">
+                based in Rio de Janeiro🌴
+              </motion.span>
+            </motion.h1>
+        </motion.div>
+        <motion.div
+        style={{
+          opacity: useTransform(scrollYProgress, [0, .1], [1, 0]) // Começa visível e some
+        }}
+          className="flex space-x-2">
+            <motion.span 
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1, x: [20, 0] }}
-              transition={{ delay: 0.8, duration: 0.4, ease: "easeOut" }}
-              className="font-light">
-              based in Rio de Janeiro🌴
+              animate={{ opacity: 1, y: [20, 0] }}
+              transition={{ delay: 1 + .1, duration: 0.4, ease: "easeOut" }}
+              className="chip">
+              financial services
             </motion.span>
-          </h1>
-        </div>
-        <div className="flex space-x-2">
-          <motion.span 
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, y: [20, 0] }}
-            transition={{ delay: 1 + .1, duration: 0.4, ease: "easeOut" }}
-            className="chip">
-            financial services
-          </motion.span>
-          <motion.span  
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, y: [20, 0] }}
-            transition={{ delay: 1 + .2, duration: 0.4, ease: "easeOut" }}
-            className="chip">
-            payment systems
-          </motion.span>
-          <motion.span  
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, y: [20, 0] }}
-            transition={{ delay: 1 + .3, duration: 0.4, ease: "easeOut" }}
-            className="chip">
-            e-commerce
-          </motion.span>
-          <motion.span  
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, y: [20, 0] }}
-            transition={{ delay: 1 + .4, duration: 0.4, ease: "easeOut" }}
-            className="chip">
-            b2b and b2c saas
-          </motion.span>
-          <motion.span  
-            initial={{ opacity: 0}}
-            animate={{ opacity: 1, y: [20, 0]}}
-            transition={{ delay: 1 + .5, duration: 0.4, ease: "easeOut" }}
-            className="chip">
-            front-end
-          </motion.span>
-        </div>
+            <motion.span  
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1, y: [20, 0] }}
+              transition={{ delay: 1 + .2, duration: 0.4, ease: "easeOut" }}
+              className="chip">
+              payment systems
+            </motion.span>
+            <motion.span  
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1, y: [20, 0] }}
+              transition={{ delay: 1 + .3, duration: 0.4, ease: "easeOut" }}
+              className="chip">
+              e-commerce
+            </motion.span>
+            <motion.span  
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1, y: [20, 0] }}
+              transition={{ delay: 1 + .4, duration: 0.4, ease: "easeOut" }}
+              className="chip">
+              b2b and b2c saas
+            </motion.span>
+            <motion.span  
+              initial={{ opacity: 0}}
+              animate={{ opacity: 1, y: [20, 0]}}
+              transition={{ delay: 1 + .5, duration: 0.4, ease: "easeOut" }}
+              className="chip">
+              front-end
+            </motion.span>
+        </motion.div>
 
         <motion.video
           width="720" height="480" 
@@ -76,6 +88,10 @@ export default function Home() {
           disablePictureInPicture preload="auto"
           animate={{ opacity: [0, 1], scale: [.9, 1]}}
           transition={{ delay: 1.7, duration: 0.4 }}
+          style={{
+            y: useTransform(scrollYProgress, [0, 1], [0, 300]), 
+            scale: useTransform(scrollYProgress, [0, 1], [1, 2])
+          }}
           className="rounded-2xl shadow-2xl shadow-zinc-500/40">
           <source src="intro.mp4" type="video/mp4" />
           Your browser does not support the video tag.
@@ -107,7 +123,7 @@ export default function Home() {
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1, y: [20, 0] }}
               transition={{ delay: 0.5, duration: 0.4, ease: "easeOut" }} 
-              className="case-card hover:border-purple-500 hover:shadow-purple-500/40" href="/re-enrollment">
+              className="case-card hover:border-emerald-500 hover:shadow-emerald-500/40" href="/re-enrollment">
               <ul className="flex space-x-2">
                 <li className="chip">usability testing</li>
                 <li className="chip">user behavior analysis</li>
@@ -116,7 +132,7 @@ export default function Home() {
               <Image src={reenrollment} alt="" width={500} height={300} />
               <div>
                 <h3 className="case-title">Payment of outstanding fees</h3>
-                <p>How I designed the re-enrollment flow, automating financial processes and <span className="underline decoration-2 decoration-purple-500">boosting debt clearance and re-enrollments.</span></p>
+                <p>How I designed the re-enrollment flow, automating financial processes and <span className="underline decoration-2 decoration-emerald-500">boosting debt clearance and re-enrollments.</span></p>
               </div>
             </motion.a>
 
