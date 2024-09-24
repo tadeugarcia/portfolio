@@ -1,8 +1,8 @@
 "use client";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
-import reenrollment from '/public/re-enrollment/case.png';
-import posgraduate from '/public/posgraduate/case.png';
+import reenrollment from '/public/re-enrollment/case.svg';
+import posgraduate from '/public/posgraduate/case.svg';
 
 export default function Home() {
   const { scrollYProgress } = useScroll();
@@ -89,8 +89,8 @@ export default function Home() {
           animate={{ opacity: [0, 1], scale: [.9, 1]}}
           transition={{ delay: 1.7, duration: 0.4 }}
           style={{
-            y: useTransform(scrollYProgress, [0, 1], [0, 300]), 
-            scale: useTransform(scrollYProgress, [0, 1], [1, 2])
+            y: useTransform(scrollYProgress, [0, 1], [0, 20]), 
+            scale: useTransform(scrollYProgress, [0, 1], [1, 1.2])
           }}
           className="rounded-2xl shadow-2xl shadow-zinc-500/40">
           <source src="intro.mp4" type="video/mp4" />
@@ -129,7 +129,7 @@ export default function Home() {
                 <li className="chip">user behavior analysis</li>
                 <li className="chip">ui + prototyping</li>
               </ul>
-              <Image src={reenrollment} alt="" width={500} height={300} />
+              <Image src={reenrollment} alt="" height={320} />
               <div>
                 <h3 className="case-title">Payment of outstanding fees</h3>
                 <p>How I designed the re-enrollment flow, automating financial processes and <span className="underline decoration-2 decoration-emerald-500">boosting debt clearance and re-enrollments.</span></p>
@@ -148,7 +148,7 @@ export default function Home() {
                 <li className="chip">design system</li>
                 <li className="chip">ui + prototyping</li>
               </ul>
-              <Image src={posgraduate} alt="" width={500} height={300} />
+              <Image src={posgraduate} alt="" height={320} />
               <div>
                 <h3 className="case-title">Premium posgraduate redesign</h3>
                 <p>I redesigned the postgraduate course purchase flow with a premium UI, <span className="underline decoration-2 decoration-yellow-500">achieving 57.14% faster navigation.</span></p>
