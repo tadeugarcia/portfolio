@@ -59,7 +59,7 @@ export default function Home() {
           </a>
         </motion.div>
       </nav>
-      <section className="container min-h-fit py-24 grid grid-cols-2 gap-12 rounded-2xl bg-green-50">
+      <section className="container min-h-fit mb-12 py-24 grid grid-cols-2 gap-12 rounded-2xl bg-green-50">
         <div className="space-y-7">
           <motion.p          
             initial={{ opacity: 0 }}
@@ -142,8 +142,7 @@ export default function Home() {
                 controlsList="nodownload"
                 disablePictureInPicture
                 preload="auto"
-                onPlay={() => setIsPlaying(true)}
-              >
+                onPlay={() => setIsPlaying(true)}>
                 <source src="intro.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
@@ -151,63 +150,73 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="case-studies" className="space-y-8">
-          <div className="text-white text-center">
-            <motion.h2 
-              viewport={{ once: true }}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, y: [20, 0] }}
-              transition={{ duration: 0.4, ease: "easeOut" }}
-              className="title">
-              Case studies
-            </motion.h2>
-            <motion.p            
-              viewport={{ once: true }}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, y: [20, 0] }}
-              transition={{ delay: 0.2, duration: 0.4, ease: "easeOut" }}>
-              Relevant experience from recent years
-            </motion.p>
-          </div>
+      <section className="case-section bg-emerald-950">
+        <motion.ul        
+          viewport={{ once: true }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, y: [20, 0] }}
+          transition={{ delay: 1, duration: 0.4, ease: "easeOut" }} 
+          className="flex space-x-2">
+          <li className="chip">usability testing</li>
+          <li className="chip">user behavior analysis</li>
+          <li className="chip">ui + prototyping</li>
+        </motion.ul>
 
-          <div className="flex flex-row space-x-5">
-            <motion.a
-              viewport={{ once: true }}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, y: [20, 0] }}
-              transition={{ delay: 0.5, duration: 0.4, ease: "easeOut" }} 
-              className="case-card hover:border-emerald-500 hover:shadow-emerald-500/40" href="/re-enrollment">
-              <ul className="flex space-x-2">
-                <li className="chip">usability testing</li>
-                <li className="chip">user behavior analysis</li>
-                <li className="chip">ui + prototyping</li>
-              </ul>
-              <Image src={reenrollment} alt="" height={320} />
-              <div>
-                <h3 className="case-title">Payment of outstanding fees</h3>
-                <p>How I designed the re-enrollment flow, automating financial processes and <span className="underline decoration-2 decoration-emerald-500">boosting debt clearance and re-enrollments.</span></p>
-              </div>
-            </motion.a>
+        <div className="flex space-x-10 items-center justify-center">
+          <motion.div          
+            viewport={{ once: true }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, y: [20, 0] }}
+            transition={{ delay: 0, duration: 0.4, ease: "easeOut" }}>
+              <Image src={reenrollment} alt="" height={480}/>
+          </motion.div>
 
-            <motion.a
-              viewport={{ once: true }}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, y: [20, 0] }}
-              transition={{ delay: 0.8, duration: 0.4, ease: "easeOut" }} 
-              className="case-card hover:border-yellow-500 hover:shadow-yellow-500/40" href="/posgraduate">
-              <ul className="flex space-x-2">
-                <li className="chip">desk research</li>
-                <li className="chip">usability testing</li>
-                <li className="chip">design system</li>
-                <li className="chip">ui + prototyping</li>
-              </ul>
-              <Image src={posgraduate} alt="" height={320} />
-              <div>
-                <h3 className="case-title">Premium posgraduate redesign</h3>
-                <p>I redesigned the postgraduate course purchase flow with a premium UI, <span className="underline decoration-2 decoration-yellow-500">achieving 57.14% faster navigation.</span></p>
-              </div>
-            </motion.a>
-          </div>        
+          <motion.div
+            viewport={{ once: true }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, y: [20, 0] }}
+            transition={{ delay: 0.5, duration: 0.4, ease: "easeOut" }} 
+            className="w-2/6">
+              <h3 className="case-title">Payment of outstanding fees</h3>
+              <p className="mb-5">How I designed the re-enrollment flow, automating financial processes and <span className="underline decoration-2 decoration-emerald-500">boosting debt clearance and re-enrollments.</span></p>
+              <a href="/re-enrollment" className="case-button bg-emerald-600 hover:border-emerald-700 hover:shadow-emerald-500/40">View case</a>
+          </motion.div>    
+        </div>            
+      </section>
+
+      <section className="case-section bg-gray-950">
+        <motion.ul
+          viewport={{ once: true }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, y: [20, 0] }}
+          transition={{ delay: 0.8, duration: 0.4, ease: "easeOut" }} 
+          className="flex space-x-2">
+            <li className="chip">desk research</li>
+            <li className="chip">usability testing</li>
+            <li className="chip">design system</li>
+            <li className="chip">ui + prototyping</li>
+        </motion.ul>
+
+        <div className="flex space-x-10 items-center justify-center">
+          <motion.div          
+            viewport={{ once: true }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, y: [20, 0] }}
+            transition={{ delay: 0, duration: 0.4, ease: "easeOut" }}>
+              <Image src={posgraduate} alt="" height={480}/>
+          </motion.div>
+
+          <motion.div
+            viewport={{ once: true }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, y: [20, 0] }}
+            transition={{ delay: 0.5, duration: 0.4, ease: "easeOut" }} 
+            className="w-2/6">
+              <h3 className="case-title">Premium posgraduate redesign</h3>
+              <p className="mb-5">I redesigned the postgraduate course purchase flow with a premium UI, <span className="underline decoration-2 decoration-yellow-500">achieving 57.14% faster navigation.</span></p>
+              <a href="/posgraduate" className="case-button bg-yellow-600 hover:border-yellow-700 hover:shadow-yellow-500/40">View case</a>
+          </motion.div>  
+        </div>
       </section>
       
       <section id="about me" className="flex flex-row text-white">        

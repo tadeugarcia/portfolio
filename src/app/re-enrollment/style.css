@@ -1,5 +1,6 @@
 body {
-  background-color: bg-emerald-950;
+  @apply
+  bg-emerald-950;
 }
 
 mark {

@@ -46,17 +46,21 @@ section {
   
   .chip { @apply
     inline-flex items-center px-3 py-1
-    text-sm font-normal text-zinc-300
+    text-xs font-light text-zinc-200 uppercase
     rounded-full
-    border border-zinc-700 
-    shadow-2xl shadow-zinc-500/40
+    border border-zinc-300
   }
   
-  .case-card { @apply
-    flex flex-col w-1/2 p-10 items-center space-y-10 
+  .case-section { @apply
+    flex flex-col w-full p-10 items-center space-y-10
     font-light text-white
-    border rounded-2xl border-zinc-400
-    shadow-2xl shadow-zinc-500/40 
+    bg-slate-950
+  }
+
+  .case-button { @apply
+    rounded-full py-2 px-4
+    font-light text-white
+    shadow-2xl shadow-zinc-500/40
     hover:opacity-75 transition duration-300 ease-in-out
   }
 
