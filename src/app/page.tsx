@@ -1,101 +1,154 @@
 "use client";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 import Image from "next/image";
+import { useState } from "react";
 import reenrollment from '/public/re-enrollment/case.svg';
 import posgraduate from '/public/posgraduate/case.svg';
+import { Linkedin02Icon, GithubIcon, GoogleDocIcon, Mail01Icon, CallIcon, PenTool03Icon, AnalyticsUpIcon, ViewIcon, SourceCodeCircleIcon, Beach02Icon, PlayIcon } from "hugeicons-react";
 
 export default function Home() {
-  const { scrollYProgress } = useScroll();
+
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handlePlay = () => {
+    const video = document.getElementById("videoPlayer") as HTMLVideoElement | null;
+    if (video) {
+      video.play();
+      setIsPlaying(true);
+    } else {
+      console.error("Video element not found");
+    }
+  };
+  
   return (
     <main>
-      <section className="space-y-7">
-        <motion.div        
-          style={{
-            y: useTransform(scrollYProgress, [0, 1], [0, 400]), 
-            scale: useTransform(scrollYProgress, [0, 1], [1, 2])
-          }}
-          className="text-center">
-            <motion.p          
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, y: [20, 0] }}
-              transition={{ duration: 0.4, ease: "easeOut" }}
-              className="title">
-              Tadeu Garcia
-            </motion.p>
-            <motion.h1
-            className="text-zinc-300">
-              <motion.span            
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, y: [20, 0]}}
-                transition={{ delay: 0.4, duration: 0.4, ease: "easeOut" }}
-                className="font-bold">
-                Senior Product Designer&nbsp;
-              </motion.span>           
-              <motion.span          
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, x: [20, 0] }}
-                transition={{ delay: 0.8, duration: 0.4, ease: "easeOut" }}
-                className="font-light">
-                based in Rio de Janeiro🌴
-              </motion.span>
-            </motion.h1>
-        </motion.div>
+      <nav className="container mx-auto py-12 top-0 left-0 right-0 flex justify-between items-center text-green-950">
+        <motion.h1
+          viewport={{ once: true }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, y: [20, 0] }}
+          transition={{ delay: 0, duration: 0.4, ease: "easeOut" }}
+          className="text-lg font-bold">
+          Tadeu Garcia
+        </motion.h1>
         <motion.div
-        style={{
-          opacity: useTransform(scrollYProgress, [0, .1], [1, 0]) // Começa visível e some
-        }}
-          className="flex space-x-2">
-            <motion.span 
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, y: [20, 0] }}
-              transition={{ delay: 1 + .1, duration: 0.4, ease: "easeOut" }}
-              className="chip">
-              financial services
-            </motion.span>
-            <motion.span  
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, y: [20, 0] }}
-              transition={{ delay: 1 + .2, duration: 0.4, ease: "easeOut" }}
-              className="chip">
-              payment systems
-            </motion.span>
-            <motion.span  
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, y: [20, 0] }}
-              transition={{ delay: 1 + .3, duration: 0.4, ease: "easeOut" }}
-              className="chip">
-              e-commerce
-            </motion.span>
-            <motion.span  
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, y: [20, 0] }}
-              transition={{ delay: 1 + .4, duration: 0.4, ease: "easeOut" }}
-              className="chip">
-              b2b and b2c saas
-            </motion.span>
-            <motion.span  
-              initial={{ opacity: 0}}
-              animate={{ opacity: 1, y: [20, 0]}}
-              transition={{ delay: 1 + .5, duration: 0.4, ease: "easeOut" }}
-              className="chip">
-              front-end
-            </motion.span>
+          viewport={{ once: true }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1, y: [20, 0] }}
+          transition={{ delay: 2, duration: 0.4, ease: "easeOut" }}
+          className="space-x-5">
+          <a href="https://www.linkedin.com/in/garciatadeu/" target="_blank" className="navbar-link">
+            <Linkedin02Icon />
+            LinkedIn
+          </a>
+          <a href="https://github.com/tadeugarcia" target="_blank" className="navbar-link">
+            <GithubIcon />
+            GitHub
+          </a>
+          <a href="Tadeu Garcia - Resume.pdf" target="_blank" className="navbar-link">
+            <GoogleDocIcon />
+            Resume
+          </a>
+          <a href="mailto:tadeugarcia.92@gmail.com" className="navbar-link">
+            <Mail01Icon />
+            Email
+          </a>
+          <a href="tel:+55 21 97997 6655" className="navbar-link">
+            <CallIcon />
+            Phone
+          </a>
         </motion.div>
+      </nav>
+      <section className="container min-h-fit py-24 grid grid-cols-2 gap-12 rounded-2xl bg-green-50">
+        <div className="space-y-7">
+          <motion.p          
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, y: [20, 0] }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
+            className="title text-green-950">
+            11 years in design.<br/>
+            Skilled in financial services, e-commerce and b2b/b2c SaaS
+          </motion.p>
+          <motion.p
+          className="text-green-900">
+            <motion.span            
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1, y: [20, 0]}}
+              transition={{ delay: 0.4, duration: 0.4, ease: "easeOut" }}
+              className="font-bold">
+              Senior Product Designer&nbsp;
+            </motion.span>           
+            <motion.span          
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1, x: [20, 0] }}
+              transition={{ delay: 0.8, duration: 0.4, ease: "easeOut" }}
+              className="font-light">
+              based in Rio de Janeiro <Beach02Icon className="inline"/>
+            </motion.span>
+          </motion.p>
+          <motion.button                   
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, y: [20, 0]}}
+            transition={{ delay: 0.4, duration: 0.4, ease: "easeOut" }}
+            className="rounded-full bg-green-500 py-2 px-4 text-white">
+            View case studies
+          </motion.button>
+        </div>
 
-        <motion.video
-          width="720" height="480" 
-          controls controlsList="nodownload" 
-          disablePictureInPicture preload="auto"
-          animate={{ opacity: [0, 1], scale: [.9, 1]}}
-          transition={{ delay: 1.7, duration: 0.4 }}
-          style={{
-            y: useTransform(scrollYProgress, [0, 1], [0, 20]), 
-            scale: useTransform(scrollYProgress, [0, 1], [1, 1.2])
-          }}
-          className="rounded-2xl shadow-2xl shadow-zinc-500/40">
-          <source src="intro.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </motion.video>
+        <div>
+          <motion.ul         
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, y: [20, 0]}}
+            transition={{ delay: 1.4, duration: 0.4, ease: "easeOut" }}
+            className="mb-5 grid grid-flow-col font-light text-green-800">
+
+            <li className="inline-flex items-center">
+              <PenTool03Icon className="rounded-full bg-green-200 size-7 mr-2 p-1"/>
+              Prototyping
+            </li>
+            <li className="inline-flex items-center">
+              <AnalyticsUpIcon className="rounded-full bg-green-200 size-7 mr-2 p-1"/>
+              Product Analytics
+            </li>
+            <li className="inline-flex items-center">
+              <ViewIcon className="rounded-full bg-green-200 size-7 mr-2 p-1"/>
+              User Research
+            </li>
+            <li className="inline-flex items-center">
+              <SourceCodeCircleIcon className="rounded-full bg-green-200 size-7 mr-2 p-1"/>
+              Front-end
+            </li>
+          </motion.ul>
+
+          <motion.div         
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, y: [20, 0]}}
+            transition={{ delay: 1, duration: 0.4, ease: "easeOut" }}
+            className="relative">
+              {!isPlaying && ( 
+                <button onClick={handlePlay} className="absolute z-10 inset-0 flex flex-row justify-start items-end p-10 bg-black bg-opacity-50 rounded-2xl">
+                  <PlayIcon className="mr-3 p-3 size-12 hgi-stroke text-green-900 bg-white rounded-full shadow-lg" />
+                  <div className="text-left text-white">
+                    <h2 className="text-xl font-bold">Introducing myself</h2>
+                    <p className="text-sm">An overview of my skills and experiences</p>
+                  </div>
+                </button>
+              )}
+
+              <video
+                id="videoPlayer"
+                className="w-full rounded-2xl shadow-2xl shadow-green-900/40"
+                controls={isPlaying}
+                controlsList="nodownload"
+                disablePictureInPicture
+                preload="auto"
+                onPlay={() => setIsPlaying(true)}
+              >
+                <source src="intro.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+          </motion.div>
+        </div>
       </section>
 
       <section id="case-studies" className="space-y-8">

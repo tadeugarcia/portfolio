@@ -23,20 +23,25 @@
 }
 
 html {
-  @apply scroll-smooth bg-gray-950
-}
-
-main {
-  @apply container mx-auto md:px-20
+  @apply scroll-smooth
 }
 
 section {
-  @apply min-h-screen flex flex-col items-center justify-center
+  @apply mx-auto md:px-20 min-h-screen flex flex-col items-center justify-center
 }
 
 @layer components {
+  .navbar-link { @apply
+    inline-flex items-center
+    hover:text-green-700 transition duration-300
+  }
+
+  .navbar-link svg {
+    @apply mr-1 size-4
+  }  
+
   .title { @apply
-    text-7xl font-medium text-zinc-50 mb-2
+    text-6xl font-medium text-zinc-50 mb-2
   }
   
   .chip { @apply
