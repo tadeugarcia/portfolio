@@ -1,6 +1,6 @@
 body {
   @apply
-  bg-emerald-950;
+  bg-teal-50 text-teal-950
 }
 
 mark {
@@ -10,5 +10,11 @@ mark {
 
 .btn-link {
   @apply
+  fill-teal-950
   hover:text-emerald-500 hover:fill-emerald-500
+}
+
+figure img {
+  @apply
+  shadow-teal-900/20
 }

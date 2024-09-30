@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import reenrollment from '/public/re-enrollment/case.svg';
 import posgraduate from '/public/posgraduate/case.svg';
-import { Linkedin02Icon, GithubIcon, GoogleDocIcon, Mail01Icon, CallIcon, PenTool03Icon, AnalyticsUpIcon, ViewIcon, SourceCodeCircleIcon, Beach02Icon, PlayIcon, CursorMagicSelection01Icon } from "hugeicons-react";
+import { Linkedin02Icon, GithubIcon, GoogleDocIcon, Mail01Icon, CallIcon, PenTool03Icon, AnalyticsUpIcon, ViewIcon, SourceCodeCircleIcon, Beach02Icon, PlayIcon, CursorMagicSelection01Icon, Diamond02Icon } from "hugeicons-react";
 
 export default function Home() {
 
@@ -60,7 +60,7 @@ export default function Home() {
         </motion.div>
       </nav>
       <section className="container min-h-fit mb-12 py-24 grid grid-cols-2 gap-12 rounded-2xl bg-green-50">
-        <div className="space-y-7">
+        <div>
           <motion.p          
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, y: [20, 0] }}
@@ -69,8 +69,7 @@ export default function Home() {
             11 years in design.<br/>
             Skilled in financial services, e-commerce and b2b/b2c SaaS
           </motion.p>
-          <motion.p
-          className="text-green-900">
+          <p className="mb-4 text-green-900">
             <motion.span            
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, y: [20, 0]}}
@@ -85,14 +84,15 @@ export default function Home() {
               className="font-light">
               based in Rio de Janeiro <Beach02Icon className="inline"/>
             </motion.span>
-          </motion.p>
-          <motion.button                   
+          </p>
+          <motion.a                   
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, y: [20, 0]}}
             transition={{ delay: 0.4, duration: 0.4, ease: "easeOut" }}
-            className="rounded-full bg-green-500 py-2 px-4 text-white">
+            href="#first-case"
+            className="rounded-full bg-green-500 py-2 px-4 text-white hover:bg-green-400 transition duration-300">
             View case studies
-          </motion.button>
+          </motion.a>
         </div>
 
         <div>
@@ -150,16 +150,16 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="case-section bg-emerald-950">
+      <section id="first-case" className="case-section bg-teal-50 text-teal-950">
         <motion.ul        
           viewport={{ once: true }}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, y: [20, 0] }}
           transition={{ delay: 1, duration: 0.4, ease: "easeOut" }} 
           className="flex space-x-2">
-          <li className="chip">usability testing</li>
-          <li className="chip">user behavior analysis</li>
-          <li className="chip">ui + prototyping</li>
+          <li className="chip text-teal-950 border-teal-700">usability testing</li>
+          <li className="chip text-teal-950 border-teal-700">user behavior analysis</li>
+          <li className="chip text-teal-950 border-teal-700">ui + prototyping</li>
         </motion.ul>
 
         <div className="flex space-x-10 items-center justify-center">
@@ -179,7 +179,7 @@ export default function Home() {
             className="w-2/6">
               <h3 className="case-title">Payment of outstanding fees</h3>
               <p className="mb-5">How I designed the re-enrollment flow, automating financial processes and <span className="underline decoration-2 decoration-emerald-500">boosting debt clearance and re-enrollments.</span></p>
-              <a href="/re-enrollment" className="case-button bg-emerald-600 hover:border-emerald-700 hover:shadow-emerald-500/40">View case</a>
+              <a href="/re-enrollment" className="case-button bg-emerald-600">View case</a>
           </motion.div>    
         </div>            
       </section>
@@ -214,19 +214,19 @@ export default function Home() {
             className="w-2/6">
               <h3 className="case-title">Premium posgraduate redesign</h3>
               <p className="mb-5">I redesigned the postgraduate course purchase flow with a premium UI, <span className="underline decoration-2 decoration-yellow-500">achieving 57.14% faster navigation.</span></p>
-              <a href="/posgraduate" className="case-button bg-yellow-600 hover:border-yellow-700 hover:shadow-yellow-500/40">View case</a>
+              <a href="/posgraduate" className="case-button bg-yellow-600">View case</a>
           </motion.div>  
         </div>
       </section>
       
-      <section className="text-gray-950 grid gap-0">
+      <section className="grid gap-0 container text-gray-950">
           <motion.h2
             viewport={{ once: true }}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1, y: [20, 0] }}
             transition={{ delay: 0, duration: 0.4, ease: "easeOut" }}
-            className="font-bold text-2xl content-center">
-              Top skills
+            className="font-normal text-2xl inline-flex items-center">
+              <Diamond02Icon className="mr-2"/>Top skills
           </motion.h2>
           <div className="grid grid-cols-5 space-x-5">            
             <motion.div 
@@ -270,7 +270,7 @@ export default function Home() {
               whileInView={{ opacity: 1, y: [20, 0] }}
               transition={{ delay: 0.3 + 0.2, duration: 0.4, ease: "easeOut" }}
               className="p-8 border rounded-2xl border-zinc-200">
-              <h3 className="font-medium text-lg mb-4 inline-flex items-center"><AnalyticsUpIcon className="mr-2"/> Product Analytics</h3>
+              <h3 className="font-medium text-lg mb-4 inline-flex items-center"><AnalyticsUpIcon className="mr-2"/> Analytics</h3>
               
               <ul className="font-light space-y-2">
                 <li>User Behavior Analysis</li>

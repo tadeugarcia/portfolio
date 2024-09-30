@@ -33,7 +33,7 @@ section {
 @layer components {
   .navbar-link { @apply
     inline-flex items-center
-    hover:text-green-700 transition duration-300
+    hover:opacity-70 transition duration-300
   }
 
   .navbar-link svg {
@@ -60,7 +60,7 @@ section {
   .case-button { @apply
     rounded-full py-2 px-4
     font-light text-white
-    shadow-2xl shadow-zinc-500/40
+    shadow-2xl shadow-neutral-500/40
     hover:opacity-75 transition duration-300 ease-in-out
   }
 
@@ -74,7 +74,7 @@ section {
   
   .btn-link {
     @apply 
-    w-fit flex
+    z-10 w-fit flex
     text-xl underline decoration-0 underline-offset-8 hover:text-neutral-500
     fill-white hover:fill-neutral-500
     transition duration-300 ease-in-out

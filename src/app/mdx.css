@@ -1,6 +1,6 @@
-main {
+body {
   @apply
-  px-0 py-20 text-white
+  px-0 py-20
 }
 
 hr {
@@ -28,7 +28,7 @@ p {
   @apply
   mb-4 m-auto
   w-[800px]
-  text-xl font-extralight tracking-wide	
+  text-xl font-light
 }
 
 small {
@@ -124,11 +124,11 @@ footer h2 {
 }
 
 .case-images figcaption {
-  @apply font-light	text-zinc-400
+  @apply font-normal
 }
 
 .case-images img {
   @apply
   h-[600px] w-auto
-  border rounded-2xl border-zinc-900
+  border rounded-2xl border-white/10
 }
