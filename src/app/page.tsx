@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import reenrollment from '/public/re-enrollment/case.svg';
 import posgraduate from '/public/posgraduate/case.svg';
-import { Linkedin02Icon, GithubIcon, GoogleDocIcon, Mail01Icon, CallIcon, PenTool03Icon, AnalyticsUpIcon, ViewIcon, SourceCodeCircleIcon, Beach02Icon, PlayIcon } from "hugeicons-react";
+import { Linkedin02Icon, GithubIcon, GoogleDocIcon, Mail01Icon, CallIcon, PenTool03Icon, AnalyticsUpIcon, ViewIcon, SourceCodeCircleIcon, Beach02Icon, PlayIcon, CursorMagicSelection01Icon } from "hugeicons-react";
 
 export default function Home() {
 
@@ -219,103 +219,135 @@ export default function Home() {
         </div>
       </section>
       
-      <section id="about me" className="flex flex-row text-white">        
-        <div className="basis-1/3 justify-center">
-          <motion.h2 
-              viewport={{ once: true }}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, y: [20, 0] }}
-              transition={{ duration: 0.4, ease: "easeOut" }}
-              className="title mb-10">
-              About me
+      <section className="text-gray-950 grid gap-0">
+          <motion.h2
+            viewport={{ once: true }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, y: [20, 0] }}
+            transition={{ delay: 0, duration: 0.4, ease: "easeOut" }}
+            className="font-bold text-2xl content-center">
+              Top skills
           </motion.h2>
-          <div className="flex flex-col space-y-4">
-            <motion.a 
+          <div className="grid grid-cols-5 space-x-5">            
+            <motion.div 
               viewport={{ once: true }}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1, y: [20, 0] }}
-              transition={{ delay: 0.2 + .1, duration: 0.4, ease: "easeOut" }}
-              href="https://www.linkedin.com/in/garciatadeu/" target="_blank" className="btn-link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M247.54-268.46 220-296l403.23-404H251.54v-40h440v440h-40v-371.69l-404 403.23Z"/></svg>
-              LinkedIn
-            </motion.a>
-            <motion.a 
-              viewport={{ once: true }}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, y: [20, 0] }}
-              transition={{ delay: 0.2 + .2, duration: 0.4, ease: "easeOut" }}
-              href="https://github.com/tadeugarcia" target="_blank" className="btn-link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M247.54-268.46 220-296l403.23-404H251.54v-40h440v440h-40v-371.69l-404 403.23Z"/></svg>
-              GitHub
-            </motion.a>
-            <motion.a 
-              viewport={{ once: true }}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, y: [20, 0] }}
-              transition={{ delay: 0.2 + .3, duration: 0.4, ease: "easeOut" }}
-              href="Tadeu Garcia - Resume.pdf" target="_blank" className="btn-link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M247.54-268.46 220-296l403.23-404H251.54v-40h440v440h-40v-371.69l-404 403.23Z"/></svg>
-              Resume
-            </motion.a>
-            <motion.a 
-              viewport={{ once: true }}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, y: [20, 0] }}
-              transition={{ delay: 0.2 + .3, duration: 0.4, ease: "easeOut" }}
-              href="mailto:tadeugarcia.92@gmail.com" className="btn-link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M247.54-268.46 220-296l403.23-404H251.54v-40h440v440h-40v-371.69l-404 403.23Z"/></svg>
-              tadeugarcia.92@gmail.com
-            </motion.a>
-            <motion.a 
-              viewport={{ once: true }}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, y: [20, 0] }}
-              transition={{ delay: 0.2 + .4, duration: 0.4, ease: "easeOut" }}
-              href="tel:+55 21 97997 6655" className="btn-link">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M247.54-268.46 220-296l403.23-404H251.54v-40h440v440h-40v-371.69l-404 403.23Z"/></svg>
-              +55 21 97997 6655
-            </motion.a>
-          </div>
-        </div>
-
-        <div className="basis-2/3">
-          <div className="grid grid-cols-2 space-x-5 text-white">
-            <motion.div            
-              viewport={{ once: true }}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, y: [20, 0] }}
-              transition={{ delay: 1.5, duration: 0.4, ease: "easeOut" }}
-              className="p-10 border rounded-2xl border-zinc-600">
-              <h2 className="font-bold text-2xl mb-5"> 
-                <span className="underline-blue">Code</span> and <span className="underline decoration-pink-500">acessibility</span>
-              </h2>
+              transition={{ delay: 0.3, duration: 0.4, ease: "easeOut" }}
+              className="p-8 border rounded-2xl border-zinc-200">
+              <h3 className="font-medium text-lg mb-4 inline-flex space-x-4 items-center"><CursorMagicSelection01Icon className="mr-2"/> Interaction Design</h3>
               
-              <div className="font-light space-y-5">
-                <p>What sets me apart is my deep, <strong className="underline-blue">long-standing interest in understanding the inner workings of interfaces.</strong> Since I began working with interfaces in 2013, I&apos;ve always wanted to <strong className="underline-blue">collaborate closely with developers.</strong> In 2016, I took this passion further by starting to work on front-end development.</p>
-                
-                <p>In my previous role, one of the directors there, who was also a developer and <strong className="underline decoration-2 decoration-pink-500">a blind person,</strong> taught me 
-                so much about accessibility: from <strong className="underline decoration-2 decoration-pink-500">best practices to using screen readers</strong>, it was an incredible learning with him.</p>
-              </div>
+              <ul className="font-light space-y-2">
+                <li>Web Components</li>
+                <li>Material Design</li>
+                <li>Design System</li>
+                <li>UI/UX Patterns</li>
+              </ul>
             </motion.div>
 
             <motion.div 
               viewport={{ once: true }}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1, y: [20, 0] }}
-              transition={{ delay: 1.8, duration: 0.4, ease: "easeOut" }}
-              className="p-10 border rounded-2xl border-zinc-600">
-              <h2 className="font-bold text-2xl mb-5">More about Tadeu</h2>
+              transition={{ delay: 0.3 + 0.2, duration: 0.4, ease: "easeOut" }}
+              className="p-8 border rounded-2xl border-zinc-200">
+              <h3 className="font-medium text-lg mb-4 inline-flex items-center"><PenTool03Icon className="mr-2"/> Prototyping</h3>
               
-              <ul className="font-light space-y-5">
-                <li>✈️ Brazilian, obtaining Spanish (EU) citizenship by end-2024.</li>
-                <li>🤖 AI enthusiast, using it daily for work and personal tasks.</li>
-                <li>🌱 To proceed with the hipster designer checklist, I&apos;m vegetarian.</li>
-                <li>🏊‍♂️ My current hobbies are swimming, board sports, yoga and meditation.</li>
-                <li>🏆 Started designing in 2007 with an online forum signature contest.</li>
+              <ul className="font-light space-y-2">
+                <li>Figma</li>
+                <li>Framer</li>
+                <li>Sketch</li>
+                <li>Axure</li>
+                <li>Microinteractions</li>
+                <li>Responsive (Mobile first)</li>
+                <li>Accessibility (WCAG Guidelines)</li>
+              </ul>
+            </motion.div>
+
+            <motion.div 
+              viewport={{ once: true }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, y: [20, 0] }}
+              transition={{ delay: 0.3 + 0.2, duration: 0.4, ease: "easeOut" }}
+              className="p-8 border rounded-2xl border-zinc-200">
+              <h3 className="font-medium text-lg mb-4 inline-flex items-center"><AnalyticsUpIcon className="mr-2"/> Product Analytics</h3>
+              
+              <ul className="font-light space-y-2">
+                <li>User Behavior Analysis</li>
+                <li>Heatmaps</li>
+                <li>UX Metrics (NPS, SUS)</li>
+                <li>CRO Strategies</li>
+                <li>A/B Testing</li>
+              </ul>
+            </motion.div>
+
+            <motion.div 
+              viewport={{ once: true }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, y: [20, 0] }}
+              transition={{ delay: 0.3 + 0.2, duration: 0.4, ease: "easeOut" }}
+              className="p-8 border rounded-2xl border-zinc-200">
+              <h3 className="font-medium text-lg mb-4 inline-flex items-center"><ViewIcon className="mr-2"/> User Research</h3>
+              
+              <ul className="font-light space-y-2">
+                <li>Usability Testing</li>
+                <li>User Interviews</li>
+                <li>Journey Mapping</li>
+                <li>Surveys</li>
+              </ul>
+            </motion.div>
+
+            <motion.div 
+              viewport={{ once: true }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, y: [20, 0] }}
+              transition={{ delay: 0.3 + 0.2, duration: 0.4, ease: "easeOut" }}
+              className="p-8 border rounded-2xl border-zinc-200">
+              <h3 className="font-medium text-lg mb-4 inline-flex items-center"><SourceCodeCircleIcon className="mr-2"/> Front-end</h3>
+              
+              <ul className="font-light space-y-2">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>SASS</li>
+                <li>Tailwind</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+                <li>Next.js</li>
+                <li>Node</li>
+                <li>NPM</li>
+                <li>Yarn</li>
+                <li>Git</li>
               </ul>
             </motion.div>
           </div>
-        </div>
+
+          <motion.div
+            viewport={{ once: true }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, y: [20, 0] }}
+            transition={{ delay: 1, duration: 0.4, ease: "easeOut" }}
+            className="content-center space-x-5">
+              <a href="https://www.linkedin.com/in/garciatadeu/" target="_blank" className="navbar-link">
+                <Linkedin02Icon />
+                LinkedIn
+              </a>
+              <a href="https://github.com/tadeugarcia" target="_blank" className="navbar-link">
+                <GithubIcon />
+                GitHub
+              </a>
+              <a href="Tadeu Garcia - Resume.pdf" target="_blank" className="navbar-link">
+                <GoogleDocIcon />
+                Resume
+              </a>
+              <a href="mailto:tadeugarcia.92@gmail.com" className="navbar-link">
+                <Mail01Icon />
+                Email
+              </a>
+              <a href="tel:+55 21 97997 6655" className="navbar-link">
+                <CallIcon />
+                Phone
+              </a>
+        </motion.div>
       </section>
     </main>
   );
