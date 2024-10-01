@@ -317,6 +317,7 @@ export default function Home() {
                 <li>NPM</li>
                 <li>Yarn</li>
                 <li>Git</li>
+                <li>Postgres</li>
               </ul>
             </motion.div>
           </div>
