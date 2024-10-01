@@ -3,8 +3,8 @@ import Image from 'next/image'
 
 <motion.div
   viewport={{ once: true }}
-  initial={{ opacity: 0 }}
-  whileInView={{ opacity: 1, y: [20, 0] }}
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
   transition={{ delay: 0, duration: 0.4, ease: "easeOut" }}>
 
 # Payment of outstanding fees

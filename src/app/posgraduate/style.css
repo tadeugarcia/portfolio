@@ -12,3 +12,8 @@ mark {
   @apply
   hover:text-yellow-500 hover:fill-yellow-500
 }
+
+figure img {
+  @apply
+  shadow-yellow-900/20
+}

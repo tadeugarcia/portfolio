@@ -69,7 +69,7 @@ export default function Home() {
             11 years in design.<br/>
             Skilled in financial services, e-commerce and b2b/b2c SaaS
           </motion.p>
-          <p className="mb-4 text-green-900">
+          <p className="mt-4 mb-10 text-green-900">
             <motion.span            
               initial={{ opacity: 0 }}
               animate={{ opacity: 1, y: [20, 0]}}
@@ -90,7 +90,7 @@ export default function Home() {
             animate={{ opacity: 1, y: [20, 0]}}
             transition={{ delay: 0.4, duration: 0.4, ease: "easeOut" }}
             href="#first-case"
-            className="rounded-full bg-green-500 py-2 px-4 text-white hover:bg-green-400 transition duration-300">
+            className="rounded-full py-2 px-4 font-medium text-white bg-green-600 hover:bg-green-500 transition duration-300">
             View case studies
           </motion.a>
         </div>
