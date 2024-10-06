@@ -4,7 +4,7 @@ import "../mdx.css";
 import "./style.css";
 
 export const metadata: Metadata = {
-    title: "Tadeu Garcia - Posgraduate Redesign Case"
+    title: "Posgraduate Redesign Case - Tadeu Garcia"
 };
 
 export default function MdxLayout({ children }: { children: React.ReactNode }) {

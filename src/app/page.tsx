@@ -100,7 +100,7 @@ export default function Home() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, y: [20, 0]}}
             transition={{ delay: 1.4, duration: 0.4, ease: "easeOut" }}
-            className="mb-5 grid grid-flow-col font-light text-green-800">
+            className="mb-5 grid grid-flow-col font-light text-green-900">
 
             <li className="inline-flex items-center">
               <PenTool03Icon className="rounded-full bg-green-200 size-7 mr-2 p-1"/>
@@ -127,7 +127,7 @@ export default function Home() {
             className="relative">
               {!isPlaying && ( 
                 <button onClick={handlePlay} className="absolute z-10 inset-0 flex flex-row justify-start items-end p-10 bg-black bg-opacity-50 rounded-2xl">
-                  <PlayIcon className="mr-3 p-3 size-12 hgi-stroke text-green-900 bg-white rounded-full shadow-lg" />
+                  <PlayIcon className="mr-3 p-3 size-12 text-neutral-800 bg-white rounded-full shadow-lg" />
                   <div className="text-left text-white">
                     <h2 className="text-xl font-bold">Introducing myself</h2>
                     <p className="text-sm">An overview of my skills and experiences</p>
@@ -150,25 +150,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="first-case" className="case-section bg-teal-50 text-teal-950">
-        <motion.ul        
-          viewport={{ once: true }}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, y: [20, 0] }}
-          transition={{ delay: 1, duration: 0.4, ease: "easeOut" }} 
-          className="flex space-x-2">
-          <li className="chip text-teal-950 border-teal-700">usability testing</li>
-          <li className="chip text-teal-950 border-teal-700">user behavior analysis</li>
-          <li className="chip text-teal-950 border-teal-700">ui + prototyping</li>
-        </motion.ul>
-
+      <section id="first-case" className="case-section bg-gradient-to-bl from-green-200 to-teal-50 text-teal-950">
         <div className="flex space-x-10 items-center justify-center">
           <motion.div          
             viewport={{ once: true }}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1, y: [20, 0] }}
-            transition={{ delay: 0, duration: 0.4, ease: "easeOut" }}>
-              <Image src={reenrollment} alt="" height={480}/>
+            transition={{ delay: 0, duration: 0.4, ease: "easeOut" }}
+            className="h-full w-fit">
+              <Image src={reenrollment} alt=""/>
           </motion.div>
 
           <motion.div
@@ -177,14 +167,24 @@ export default function Home() {
             whileInView={{ opacity: 1, y: [20, 0] }}
             transition={{ delay: 0.5, duration: 0.4, ease: "easeOut" }} 
             className="w-2/6">
+              <motion.ul        
+                viewport={{ once: true }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, y: [20, 0] }}
+                transition={{ delay: 1, duration: 0.4, ease: "easeOut" }} 
+                className="mb-10 space-x-2">
+                <li className="chip text-teal-900 border-teal-700">usability testing</li>
+                <li className="chip text-teal-900 border-teal-700">user behavior analysis</li>
+                <li className="chip text-teal-900 border-teal-700">ui + prototyping</li>
+              </motion.ul>
               <h3 className="case-title">Payment of outstanding fees</h3>
-              <p className="mb-5">How I designed the re-enrollment flow, automating financial processes and <span className="underline decoration-2 decoration-emerald-500">boosting debt clearance and re-enrollments.</span></p>
+              <p className="mb-10">How I designed the re-enrollment flow, automating financial processes and <span className="underline decoration-2 decoration-emerald-500">boosting debt clearance and re-enrollments.</span></p>
               <a href="/re-enrollment" className="case-button bg-emerald-600">View case</a>
           </motion.div>    
         </div>            
       </section>
 
-      <section className="case-section bg-gray-950">
+      <section className="case-section bg-gradient-to-bl from-slate-900 to-stone-950">
         <motion.ul
           viewport={{ once: true }}
           initial={{ opacity: 0 }}
