@@ -1,10 +1,11 @@
 import * as motion from "framer-motion/client";
+import { ColorPickerIcon, Money03Icon, SmartPhone01Icon, Rocket02Icon, EnergyIcon, CursorDisabled02Icon } from "hugeicons-react";
 
 <motion.div
-  viewport={{ once: true }}
-  initial={{ opacity: 0 }}
-  whileInView={{ opacity: 1, y: [20, 0] }}
-  transition={{ delay: 0, duration: 0.4, ease: "easeOut" }}>
+viewport={{ once: true }}
+initial={{ opacity: 0 }}
+whileInView={{ opacity: 1, y: [20, 0] }}
+transition={{ delay: 0, duration: 0.4, ease: "easeOut" }}>
 
 # Premium posgraduate redesign
 I redesigned the postgraduate course purchase flow with a premium UI, achieving 57.14% faster navigation.
@@ -17,59 +18,26 @@ I redesigned the postgraduate course purchase flow with a premium UI, achieving 
 </motion.div>
 
 <motion.div
-  viewport={{ once: true }}
-  initial={{ opacity: 0 }}
-  whileInView={{ opacity: 1, y: [20, 0] }}
-  transition={{ delay: 0.4, duration: 0.4, ease: "easeOut" }}>
+viewport={{ once: true }}
+initial={{ opacity: 0 }}
+whileInView={{ opacity: 1, y: [20, 0] }}
+transition={{ delay: 0.4, duration: 0.4, ease: "easeOut" }}>
 
 ## What were the problems?
-- We did not have a defined visual identity.
-- I needed to <mark>communicate the aspect of a premium product</mark>, respecting the market positioning found in the previous analysis.
-</motion.div>
+The issue arose from a lack of a defined visual identity, leading to poor product-market fit and positioning.
 
-<motion.div
-  viewport={{ once: true }}
-  initial={{ opacity: 0 }}
-  whileInView={{ opacity: 1, y: [20, 0] }}
-  transition={{ delay: 0.4, duration: 0.4, ease: "easeOut" }}>
-
-## Previous design
-There was no mobile version, and what loaded on smartphones was the reduced web version.
-Below, the simplified previous course selection journey.
-
-<div className="case-images">
-  <figure>
-    <img src="posgraduate/old-screens-1.png"/>
-    <figcaption>1. Institution's Home Page</figcaption>
-  </figure>
-
-  <figure>
-    <img src="posgraduate/old-screens-2.png"/>
-    <figcaption>2. Course Description Page</figcaption>
-  </figure>
-
-  <figure>
-    <img src="posgraduate/old-screens-3.png"/>
-    <figcaption>3. Subscription - Course Selection</figcaption>
-  </figure>
-
-  <figure>
-    <img src="posgraduate/old-screens-4.png"/>
-    <figcaption>4. Subscription - Payment Method Selection</figcaption>
-  </figure>
-
-  <figure>
-    <img src="posgraduate/old-screens-5.png"/>
-    <figcaption>5. Subscription - Payment Method Selection</figcaption>
-  </figure>
+<div className="project-cards">
+- <ColorPickerIcon/> Visual identity
+- <SmartPhone01Icon/> Not responsive
+- <Money03Icon/> Product-market fit
 </div>
 </motion.div>
 
 <motion.div
-  viewport={{ once: true }}
-  initial={{ opacity: 0 }}
-  whileInView={{ opacity: 1, y: [20, 0] }}
-  transition={{ delay: 0.4, duration: 0.4, ease: "easeOut" }}>
+viewport={{ once: true }}
+initial={{ opacity: 0 }}
+whileInView={{ opacity: 1, y: [20, 0] }}
+transition={{ delay: 0.4, duration: 0.4, ease: "easeOut" }}>
 
 ## Desk research
 
@@ -79,53 +47,93 @@ Below, the simplified previous course selection journey.
 </motion.div>
 
 <motion.div
-  viewport={{ once: true }}
-  initial={{ opacity: 0 }}
-  whileInView={{ opacity: 1, y: [20, 0] }}
-  transition={{ delay: 0.4, duration: 0.4, ease: "easeOut" }}>
+viewport={{ once: true }}
+initial={{ opacity: 0 }}
+whileInView={{ opacity: 1, y: [20, 0] }}
+transition={{ delay: 0.4, duration: 0.4, ease: "easeOut" }}>
 
 ## Redesigning the experience
 The redesign incorporated all aspects of the previous analysis. <mark>I created a style guide containing navigation components and a new color palette.</mark>
 Below, the simplified new course selection journey.
 
+
+Below, the simplified previous course selection journey.
+
 <div className="case-images">
   <figure>
+    <img src="posgraduate/old-screens-1.png"/>
+    <figcaption>**Previous** Institution's Home Page</figcaption>
+  </figure>
+
+  <figure>
     <img src="posgraduate/new-screens-1.svg"/>
-    <figcaption>1. Institution's Home Page</figcaption>
+    <figcaption>**New** Institution's Home Page</figcaption>
+  </figure>
+</div>
+
+<div className="case-images">
+  <figure>
+    <img src="posgraduate/old-screens-2.png"/>
+    <figcaption>**Previous** Course Description Page</figcaption>
   </figure>
 
   <figure>
     <img src="posgraduate/new-screens-2.svg"/>
-    <figcaption>2. Course Description Page</figcaption>
+    <figcaption>**New** Course Description Page</figcaption>
+  </figure>
+</div>
+
+<div className="case-images">
+  <figure>
+    <img src="posgraduate/old-screens-3.png"/>
+    <figcaption>**Previous** Course Subscription</figcaption>
   </figure>
 
   <figure>
     <img src="posgraduate/new-screens-3.svg"/>
-    <figcaption>3. Subscription - Course Selection</figcaption>
+    <figcaption>**New** Course Subscription</figcaption>
+  </figure>
+  
+  <figure>
+    <img src="posgraduate/old-screens-4.png"/>
+    <figcaption>**Previous** Course Confirmation</figcaption>
   </figure>
 
   <figure>
     <img src="posgraduate/new-screens-4.svg"/>
-    <figcaption>4. Subscription - Payment Method Selection</figcaption>
+    <figcaption>**New** Course Confirmation</figcaption>
+  </figure>
+
+  <figure>
+    <img src="posgraduate/old-screens-5.png"/>
+    <figcaption>**Previous** Payment Method Selection</figcaption>
   </figure>
 
   <figure>
     <img src="posgraduate/new-screens-5.svg"/>
-    <figcaption>5. Subscription - Payment Method Selection</figcaption>
+    <figcaption>**New** Payment Method Selection</figcaption>
   </figure>
 </div>
 </motion.div>
 
 <motion.div
-  viewport={{ once: true }}
-  initial={{ opacity: 0 }}
-  whileInView={{ opacity: 1, y: [20, 0] }}
-  transition={{ delay: 0.4, duration: 0.4, ease: "easeOut" }}>
+viewport={{ once: true }}
+initial={{ opacity: 0 }}
+whileInView={{ opacity: 1, y: [20, 0] }}
+transition={{ delay: 0.4, duration: 0.4, ease: "easeOut" }}>
 
-## Usability Testing
-Using Maze, two unmoderated usability tests were conducted to test the fluidity of navigation and the difference from the previous version: one test with the previous version and one test with the new version. 
+## Results
+
+Using Maze, two unmoderated <mark>usability tests were conducted to test the fluidity of navigation</mark> and the difference from the previous version: one test with the previous version and one test with the new version. 
 
 Regarding the recruitment of participants, it was done by me, and a discount coupon for the bookstore was used as an incentive to participate.
 
-The 10 tests performed (5 of each model) resulted in <mark>57.14% faster navigation and a 67% drop in the rate of incorrect clicks.</mark>
+The 10 tests performed (5 of each model) resulted in 57.14% faster navigation and a 67% drop in the rate of incorrect clicks.
+
+<div className="project-cards">
+- <Rocket02Icon/> 10 tests performed
+- <EnergyIcon/> 57.14% faster
+- <CursorDisabled02Icon/> 67% less missclicks
+</div>
+
 </motion.div>

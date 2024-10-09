@@ -1,10 +1,18 @@
 "use client";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { useState } from "react";
-import reenrollment from '/public/re-enrollment/case.svg';
-import posgraduate from '/public/posgraduate/case.svg';
-import { Linkedin02Icon, GithubIcon, GoogleDocIcon, Mail01Icon, CallIcon, PenTool03Icon, AnalyticsUpIcon, ViewIcon, SourceCodeCircleIcon, Beach02Icon, PlayIcon, CursorMagicSelection01Icon, Diamond02Icon } from "hugeicons-react";
+import Image from "next/image";
+import reenrollment1 from '/public/re-enrollment/new-screens-1.svg';
+import reenrollment2 from '/public/re-enrollment/new-screens-2.svg';
+import reenrollment3 from '/public/re-enrollment/new-screens-3.svg';
+import reenrollment4 from '/public/re-enrollment/new-screens-4.svg';
+import reenrollment5 from '/public/re-enrollment/new-screens-5.svg';
+import posgraduate1 from '/public/posgraduate/new-screens-1.svg';
+import posgraduate2 from '/public/posgraduate/new-screens-2.svg';
+import posgraduate3 from '/public/posgraduate/new-screens-3.svg';
+import posgraduate4 from '/public/posgraduate/new-screens-4.svg';
+import posgraduate5 from '/public/posgraduate/new-screens-5.svg';
+import { Linkedin02Icon, GithubIcon, GoogleDocIcon, PenTool03Icon, AnalyticsUpIcon, ViewIcon, SourceCodeCircleIcon, Beach02Icon, PlayIcon, CursorMagicSelection01Icon, UmbrellaIcon } from "hugeicons-react";
 
 export default function Home() {
 
@@ -21,223 +29,230 @@ export default function Home() {
   };
   
   return (
-    <main>
-      <nav className="container mx-auto py-12 top-0 left-0 right-0 flex justify-between items-center text-green-950">
-        <motion.h1
+    <main>      
+      <section>
+        <motion.div 
           viewport={{ once: true }}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, y: [20, 0] }}
-          transition={{ delay: 0, duration: 0.4, ease: "easeOut" }}
-          className="text-lg font-bold">
-          Tadeu Garcia
-        </motion.h1>
-        <motion.div
-          viewport={{ once: true }}
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, y: [20, 0] }}
-          transition={{ delay: 2, duration: 0.4, ease: "easeOut" }}
-          className="space-x-5">
-          <a href="https://www.linkedin.com/in/garciatadeu/" target="_blank" className="navbar-link">
-            <Linkedin02Icon />
-            LinkedIn
-          </a>
-          <a href="https://github.com/tadeugarcia" target="_blank" className="navbar-link">
-            <GithubIcon />
-            GitHub
-          </a>
-          <a href="Tadeu Garcia - Resume.pdf" target="_blank" className="navbar-link">
-            <GoogleDocIcon />
-            Resume
-          </a>
-          <a href="mailto:tadeugarcia.92@gmail.com" className="navbar-link">
-            <Mail01Icon />
-            Email
-          </a>
-          <a href="tel:+55 21 97997 6655" className="navbar-link">
-            <CallIcon />
-            Phone
-          </a>
-        </motion.div>
-      </nav>
-      <section className="container min-h-fit mb-12 py-24 grid grid-cols-2 gap-12 rounded-2xl bg-green-50">
-        <div>
-          <motion.p          
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, y: [20, 0] }}
-            transition={{ duration: 0.4, ease: "easeOut" }}
-            className="title text-green-950">
-            11 years in design.<br/>
-            Skilled in financial services, e-commerce and b2b/b2c SaaS
-          </motion.p>
-          <p className="mt-4 mb-10 text-green-900">
-            <motion.span            
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, y: [20, 0]}}
-              transition={{ delay: 0.4, duration: 0.4, ease: "easeOut" }}
-              className="font-bold">
-              Senior Product Designer&nbsp;
-            </motion.span>           
-            <motion.span          
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1, x: [20, 0] }}
-              transition={{ delay: 0.8, duration: 0.4, ease: "easeOut" }}
-              className="font-light">
-              based in Rio de Janeiro <Beach02Icon className="inline"/>
-            </motion.span>
-          </p>
-          <motion.a                   
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, y: [20, 0]}}
-            transition={{ delay: 0.4, duration: 0.4, ease: "easeOut" }}
-            href="#first-case"
-            className="rounded-full py-2 px-4 font-medium text-white bg-green-600 hover:bg-green-500 transition duration-300">
-            View case studies
-          </motion.a>
-        </div>
-
-        <div>
-          <motion.ul         
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, y: [20, 0]}}
-            transition={{ delay: 1.4, duration: 0.4, ease: "easeOut" }}
-            className="mb-5 grid grid-flow-col font-light text-green-900">
-
-            <li className="inline-flex items-center">
-              <PenTool03Icon className="rounded-full bg-green-200 size-7 mr-2 p-1"/>
-              Prototyping
-            </li>
-            <li className="inline-flex items-center">
-              <AnalyticsUpIcon className="rounded-full bg-green-200 size-7 mr-2 p-1"/>
-              Product Analytics
-            </li>
-            <li className="inline-flex items-center">
-              <ViewIcon className="rounded-full bg-green-200 size-7 mr-2 p-1"/>
-              User Research
-            </li>
-            <li className="inline-flex items-center">
-              <SourceCodeCircleIcon className="rounded-full bg-green-200 size-7 mr-2 p-1"/>
-              Front-end
-            </li>
-          </motion.ul>
-
-          <motion.div         
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1, y: [20, 0]}}
-            transition={{ delay: 1, duration: 0.4, ease: "easeOut" }}
-            className="relative">
-              {!isPlaying && ( 
-                <button onClick={handlePlay} className="absolute z-10 inset-0 flex flex-row justify-start items-end p-10 bg-black bg-opacity-50 rounded-2xl">
-                  <PlayIcon className="mr-3 p-3 size-12 text-neutral-800 bg-white rounded-full shadow-lg" />
-                  <div className="text-left text-white">
-                    <h2 className="text-xl font-bold">Introducing myself</h2>
-                    <p className="text-sm">An overview of my skills and experiences</p>
-                  </div>
-                </button>
-              )}
-
-              <video
-                id="videoPlayer"
-                className="w-full rounded-2xl shadow-2xl shadow-green-900/40"
-                controls={isPlaying}
-                controlsList="nodownload"
-                disablePictureInPicture
-                preload="auto"
-                onPlay={() => setIsPlaying(true)}>
-                <source src="intro.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-          </motion.div>
-        </div>
-      </section>
-
-      <section id="first-case" className="case-section bg-gradient-to-bl from-green-200 to-teal-50 text-teal-950">
-        <div className="flex space-x-10 items-center justify-center">
-          <motion.div          
-            viewport={{ once: true }}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1, y: [20, 0] }}
-            transition={{ delay: 0, duration: 0.4, ease: "easeOut" }}
-            className="h-full w-fit">
-              <Image src={reenrollment} alt=""/>
-          </motion.div>
-
-          <motion.div
-            viewport={{ once: true }}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1, y: [20, 0] }}
-            transition={{ delay: 0.5, duration: 0.4, ease: "easeOut" }} 
-            className="w-2/6">
-              <motion.ul        
+          transition={{ delay: 0, duration: .4, ease: "easeOut" }}
+          className="container my-16 p-16 grid grid-cols-5 rounded-2xl backdrop-blur-sm bg-green-400/10 text-green-950">
+            <div className="col-span-3">            
+              <motion.h1
                 viewport={{ once: true }}
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1, y: [20, 0] }}
-                transition={{ delay: 1, duration: 0.4, ease: "easeOut" }} 
-                className="mb-10 space-x-2">
-                <li className="chip text-teal-900 border-teal-700">usability testing</li>
-                <li className="chip text-teal-900 border-teal-700">user behavior analysis</li>
-                <li className="chip text-teal-900 border-teal-700">ui + prototyping</li>
-              </motion.ul>
-              <h3 className="case-title">Payment of outstanding fees</h3>
-              <p className="mb-10">How I designed the re-enrollment flow, automating financial processes and <span className="underline decoration-2 decoration-emerald-500">boosting debt clearance and re-enrollments.</span></p>
-              <a href="/re-enrollment" className="case-button bg-emerald-600">View case</a>
-          </motion.div>    
-        </div>            
-      </section>
+                transition={{ delay: 0, duration: .4, ease: "easeOut" }}
+                className="text-lg font-bold">
+                Tadeu Garcia
+              </motion.h1>
+              <motion.p          
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1, y: [20, 0] }}
+                transition={{ delay: 0, duration: .4, ease: "easeOut" }}
+                className="title">
+                11 years in design.<br/>
+                Skilled at e-commerce, financial services and b2b/b2c SaaS
+              </motion.p>
+              <p>
+                <motion.span            
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1, y: [20, 0]}}
+                  transition={{ delay: .4, duration: .4, ease: "easeOut" }}
+                  className="font-bold">
+                  Senior Product Designer&nbsp;
+                </motion.span>
+                <motion.span          
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1, x: [20, 0] }}
+                  transition={{ delay: .8, duration: .4, ease: "easeOut" }}
+                  className="font-normal">
+                  based in Rio de Janeiro <Beach02Icon className="inline"/>
+                </motion.span>
+              </p>
+              <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1, y: [20, 0]}}
+                transition={{ delay: .8, duration: .4, ease: "easeOut" }}>
+                <a href="#first-case" className="button-primary mt-6 bg-green-600">
+                  View case studies
+                </a>
+              </motion.div>
+            </div>
 
-      <section className="case-section bg-gradient-to-bl from-slate-900 to-stone-950">
-        <motion.ul
+            <div className="col-span-2">            
+              <nav className="mx-auto mb-5 w-full inline-flex justify-end text-green-950">          
+                <motion.div
+                  viewport={{ once: true }}
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1, y: [20, 0] }}
+                  transition={{ delay: .8, duration: .4, ease: "easeOut" }}
+                  className="space-x-5">
+                  <a href="https://www.linkedin.com/in/garciatadeu/" target="_blank" className="navbar-link">
+                    <Linkedin02Icon/>
+                    LinkedIn
+                  </a>
+                  <a href="https://github.com/tadeugarcia" target="_blank" className="navbar-link">
+                    <GithubIcon/>
+                    GitHub
+                  </a>
+                  <a href="Tadeu Garcia - Resume.pdf" target="_blank" className="navbar-link">
+                    <GoogleDocIcon/>
+                    Resume
+                  </a>
+                </motion.div>
+              </nav>
+
+              <motion.div         
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1, y: [20, 0]}}
+                transition={{ delay: .4, duration: .4, ease: "easeOut" }}
+                className="relative">
+                  {!isPlaying && ( 
+                    <button onClick={handlePlay} className="absolute z-10 inset-0 flex flex-row justify-start items-end p-10 bg-black bg-opacity-50 rounded-2xl">
+                      <svg className="mr-3 p-3 size-12 fill-green-950 bg-white rounded-full shadow-lg" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M320-200v-560l440 280-440 280Z"/></svg>
+                      <div className="text-left text-white">
+                        <h2 className="text-xl font-bold">Introducing myself</h2>
+                        <p className="text-sm">An overview of my skills and experiences</p>
+                      </div>
+                    </button>
+                  )}
+
+                  <video
+                    id="videoPlayer"
+                    className="w-full rounded-2xl shadow-2xl shadow-green-900/40"
+                    controls={isPlaying}
+                    controlsList="nodownload"
+                    disablePictureInPicture
+                    preload="auto"
+                    onPlay={() => setIsPlaying(true)}>
+                    <source src="intro.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+              </motion.div>
+            </div>
+        </motion.div>
+
+        <motion.div
           viewport={{ once: true }}
           initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1, y: [20, 0] }}
-          transition={{ delay: 0.8, duration: 0.4, ease: "easeOut" }} 
-          className="flex space-x-2">
-            <li className="chip">desk research</li>
-            <li className="chip">usability testing</li>
-            <li className="chip">design system</li>
-            <li className="chip">ui + prototyping</li>
-        </motion.ul>
+          whileInView={{ opacity: .08 }}
+          transition={{ delay: 0, duration: .4, ease: "easeOut" }}
+          className="-z-10 right-0 bottom-200rem absolute p-20 grid grid-cols-5 gap-16">
+            <Image src={reenrollment3} className="border rounded-2xl border-black/20" alt=""/>
+            <Image src={reenrollment5} className="border rounded-2xl border-black/20" alt=""/>
+            <Image src={reenrollment2} className="border rounded-2xl border-black/20" alt=""/>
+            <Image src={reenrollment1} className="border rounded-2xl border-black/20" alt=""/>
+            <Image src={reenrollment2} className="border rounded-2xl border-black/20" alt=""/>
 
-        <div className="flex space-x-10 items-center justify-center">
-          <motion.div          
+            <Image src={reenrollment4} className="border rounded-2xl border-black/20" alt=""/>
+            <Image src={reenrollment3} className="border rounded-2xl border-black/20" alt=""/>
+            <Image src={reenrollment2} className="border rounded-2xl border-black/20" alt=""/>
+            <Image src={reenrollment5} className="border rounded-2xl border-black/20" alt=""/>
+            <Image src={reenrollment1} className="border rounded-2xl border-black/20" alt=""/>
+        </motion.div>
+      </section>
+
+      <section id="first-case" className="bg-gradient-to-tr from-stone-950 via-slate-900 to-slate-950 text-stone-50">
+        <div className="case-section">         
+          <motion.ul        
             viewport={{ once: true }}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1, y: [20, 0] }}
-            transition={{ delay: 0, duration: 0.4, ease: "easeOut" }}>
-              <Image src={posgraduate} alt="" height={480}/>
-          </motion.div>
-
+            transition={{ delay: .5, duration: .4, ease: "easeOut" }} 
+            className="space-x-2">
+              <li className="chip text-white border-yellow-500">desk research</li>
+              <li className="chip text-white border-yellow-500">usability testing</li>
+              <li className="chip text-white border-yellow-500">design system</li>
+              <li className="chip text-white border-yellow-500">ui + prototyping</li>
+          </motion.ul>
+          
           <motion.div
             viewport={{ once: true }}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1, y: [20, 0] }}
-            transition={{ delay: 0.5, duration: 0.4, ease: "easeOut" }} 
-            className="w-2/6">
+            transition={{ delay: 0, duration: .4, ease: "easeOut" }}>
               <h3 className="case-title">Premium posgraduate redesign</h3>
-              <p className="mb-5">I redesigned the postgraduate course purchase flow with a premium UI, <span className="underline decoration-2 decoration-yellow-500">achieving 57.14% faster navigation.</span></p>
-              <a href="/posgraduate" className="case-button bg-yellow-600">View case</a>
-          </motion.div>  
+              <p>I redesigned the postgraduate course purchase flow with a premium UI, <span className="underline decoration-2 decoration-yellow-500">achieving 57.14% faster navigation.</span></p>
+              <a href="/posgraduate" className="button-primary bg-yellow-600">View case</a>
+          </motion.div>
+
+          <motion.a          
+            viewport={{ once: true }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, y: [20, 0] }}
+            transition={{ delay: .4, duration: .4, ease: "easeOut" }}
+            href="/posgraduate"
+            className="case-screens">
+              <Image src={posgraduate1} alt=""/>
+              <Image src={posgraduate2} alt=""/>
+              <Image src={posgraduate3} alt=""/>
+              <Image src={posgraduate4} alt=""/>
+              <Image src={posgraduate5} alt=""/>
+          </motion.a>
+        </div>
+      </section>
+
+      <section id="first-case" className="bg-gradient-to-tr from-emerald-50 via-blue-100 to-amber-50 text-emerald-950">
+        <div className="case-section">         
+          <motion.ul        
+            viewport={{ once: true }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, y: [20, 0] }}
+            transition={{ delay: .5, duration: .4, ease: "easeOut" }} 
+            className="space-x-2">
+            <li className="chip text-emerald-950 border-emerald-600">usability testing</li>
+            <li className="chip text-emerald-950 border-emerald-600">user behavior analysis</li>
+            <li className="chip text-emerald-950 border-emerald-600">ui + prototyping</li>
+          </motion.ul>
+          
+          <motion.div
+            viewport={{ once: true }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, y: [20, 0] }}
+            transition={{ delay: 0, duration: .4, ease: "easeOut" }}>
+              <h3 className="case-title">Payment of outstanding fees</h3>
+              <p>How I designed the re-enrollment flow, automating financial processes and <span className="underline decoration-2 decoration-emerald-500">boosting debt clearance.</span></p>
+              <a href="/re-enrollment" className="button-primary bg-emerald-600">View case</a>
+          </motion.div>
+
+          <motion.a          
+            viewport={{ once: true }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1, y: [20, 0] }}
+            transition={{ delay: .4, duration: .4, ease: "easeOut" }}
+            href="/re-enrollment"
+            className="case-screens">
+              <Image src={reenrollment1} alt=""/>
+              <Image src={reenrollment2} alt=""/>
+              <Image src={reenrollment3} alt=""/>
+              <Image src={reenrollment4} alt=""/>
+              <Image src={reenrollment5} alt=""/>
+          </motion.a>
         </div>
       </section>
       
-      <section className="grid gap-0 container text-gray-950">
+      <section className="bg-gradient-to-tr from-purple-50 via-emerald-50 to-lime-50 text-green-950">
+        <div className="container grid gap-10">
           <motion.h2
             viewport={{ once: true }}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1, y: [20, 0] }}
-            transition={{ delay: 0, duration: 0.4, ease: "easeOut" }}
-            className="font-normal text-2xl inline-flex items-center">
-              <Diamond02Icon className="mr-2"/>Top skills
+            transition={{ delay: 0, duration: .4, ease: "easeOut" }}
+            className="font-normal text-2xl text-center">
+              <strong>Tadeu</strong> a well-rounded generalist within the UX Umbrella
+              <UmbrellaIcon className="ml-2 inline-block"/>
           </motion.h2>
           <div className="grid grid-cols-5 space-x-5">            
             <motion.div 
               viewport={{ once: true }}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1, y: [20, 0] }}
-              transition={{ delay: 0.3, duration: 0.4, ease: "easeOut" }}
-              className="p-8 border rounded-2xl border-zinc-200">
-              <h3 className="font-medium text-lg mb-4 inline-flex space-x-4 items-center"><CursorMagicSelection01Icon className="mr-2"/> Interaction Design</h3>
+              transition={{ delay: .3, duration: .4, ease: "easeOut" }}
+              className="umbrella-cards">
+              <h3 className="font-semibold text-lg mb-4 inline-flex space-x-4 items-center"><CursorMagicSelection01Icon className="mr-2"/> Interaction Design</h3>
               
-              <ul className="font-light space-y-2">
+              <ul className="font-normal space-y-2">
                 <li>Web Components</li>
                 <li>Material Design</li>
                 <li>Design System</li>
@@ -249,18 +264,18 @@ export default function Home() {
               viewport={{ once: true }}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1, y: [20, 0] }}
-              transition={{ delay: 0.3 + 0.2, duration: 0.4, ease: "easeOut" }}
-              className="p-8 border rounded-2xl border-zinc-200">
-              <h3 className="font-medium text-lg mb-4 inline-flex items-center"><PenTool03Icon className="mr-2"/> Prototyping</h3>
+              transition={{ delay: .3 + .2, duration: .4, ease: "easeOut" }}
+              className="umbrella-cards">
+              <h3 className="font-semibold text-lg mb-4 inline-flex items-center"><PenTool03Icon className="mr-2"/> Prototyping</h3>
               
-              <ul className="font-light space-y-2">
+              <ul className="font-normal space-y-2">
                 <li>Figma</li>
                 <li>Framer</li>
                 <li>Sketch</li>
                 <li>Axure</li>
                 <li>Microinteractions</li>
-                <li>Responsive (Mobile first)</li>
-                <li>Accessibility (WCAG Guidelines)</li>
+                <li>Responsive</li>
+                <li>Accessibility</li>
               </ul>
             </motion.div>
 
@@ -268,28 +283,11 @@ export default function Home() {
               viewport={{ once: true }}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1, y: [20, 0] }}
-              transition={{ delay: 0.3 + 0.2, duration: 0.4, ease: "easeOut" }}
-              className="p-8 border rounded-2xl border-zinc-200">
-              <h3 className="font-medium text-lg mb-4 inline-flex items-center"><AnalyticsUpIcon className="mr-2"/> Analytics</h3>
+              transition={{ delay: .3 + .2, duration: .4, ease: "easeOut" }}
+              className="umbrella-cards">
+              <h3 className="font-semibold text-lg mb-4 inline-flex items-center"><ViewIcon className="mr-2"/> User Research</h3>
               
-              <ul className="font-light space-y-2">
-                <li>User Behavior Analysis</li>
-                <li>Heatmaps</li>
-                <li>UX Metrics (NPS, SUS)</li>
-                <li>CRO Strategies</li>
-                <li>A/B Testing</li>
-              </ul>
-            </motion.div>
-
-            <motion.div 
-              viewport={{ once: true }}
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1, y: [20, 0] }}
-              transition={{ delay: 0.3 + 0.2, duration: 0.4, ease: "easeOut" }}
-              className="p-8 border rounded-2xl border-zinc-200">
-              <h3 className="font-medium text-lg mb-4 inline-flex items-center"><ViewIcon className="mr-2"/> User Research</h3>
-              
-              <ul className="font-light space-y-2">
+              <ul className="font-normal space-y-2">
                 <li>Usability Testing</li>
                 <li>User Interviews</li>
                 <li>Journey Mapping</li>
@@ -301,23 +299,38 @@ export default function Home() {
               viewport={{ once: true }}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1, y: [20, 0] }}
-              transition={{ delay: 0.3 + 0.2, duration: 0.4, ease: "easeOut" }}
-              className="p-8 border rounded-2xl border-zinc-200">
-              <h3 className="font-medium text-lg mb-4 inline-flex items-center"><SourceCodeCircleIcon className="mr-2"/> Front-end</h3>
+              transition={{ delay: .3 + .2, duration: .4, ease: "easeOut" }}
+              className="umbrella-cards">
+              <h3 className="font-semibold text-lg mb-4 inline-flex items-center"><AnalyticsUpIcon className="mr-2"/> Analytics</h3>
               
-              <ul className="font-light space-y-2">
+              <ul className="font-normal space-y-2">
+                <li>User Behavior Analysis</li>
+                <li>Heatmaps</li>
+                <li>UX Metrics</li>
+                <li>CRO Strategies</li>
+                <li>A/B Testing</li>
+              </ul>
+            </motion.div>
+
+            <motion.div 
+              viewport={{ once: true }}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1, y: [20, 0] }}
+              transition={{ delay: .3 + .2, duration: .4, ease: "easeOut" }}
+              className="umbrella-cards">
+              <h3 className="font-semibold text-lg mb-4 inline-flex items-center"><SourceCodeCircleIcon className="mr-2"/> Front-end</h3>
+              
+              <ul className="font-normal space-y-2">
                 <li>HTML</li>
-                <li>CSS</li>
-                <li>SASS</li>
+                <li>CSS / SASS</li>
                 <li>Tailwind</li>
                 <li>Bootstrap</li>
                 <li>JavaScript</li>
                 <li>Next.js</li>
                 <li>Node</li>
-                <li>NPM</li>
-                <li>Yarn</li>
-                <li>Git</li>
+                <li>NPM / Yarn</li>
                 <li>Postgres</li>
+                <li>Git</li>
               </ul>
             </motion.div>
           </div>
@@ -326,29 +339,16 @@ export default function Home() {
             viewport={{ once: true }}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1, y: [20, 0] }}
-            transition={{ delay: 1, duration: 0.4, ease: "easeOut" }}
-            className="content-center space-x-5">
-              <a href="https://www.linkedin.com/in/garciatadeu/" target="_blank" className="navbar-link">
-                <Linkedin02Icon />
-                LinkedIn
+            transition={{ delay: .4, duration: .4, ease: "easeOut" }}
+            className="flex-row space-y-2 text-center">
+              <p className="text-xl">
+                Feel free to reach out, <strong>I look forward to hearing from you</strong>
+              </p>
+              <a href="mailto:tadeugarcia.92@gmail.com" className="btn-link inline-block hover:text-green-700">
+                tadeugarcia.92@gmail.com
               </a>
-              <a href="https://github.com/tadeugarcia" target="_blank" className="navbar-link">
-                <GithubIcon />
-                GitHub
-              </a>
-              <a href="Tadeu Garcia - Resume.pdf" target="_blank" className="navbar-link">
-                <GoogleDocIcon />
-                Resume
-              </a>
-              <a href="mailto:tadeugarcia.92@gmail.com" className="navbar-link">
-                <Mail01Icon />
-                Email
-              </a>
-              <a href="tel:+55 21 97997 6655" className="navbar-link">
-                <CallIcon />
-                Phone
-              </a>
-        </motion.div>
+          </motion.div>
+        </div>
       </section>
     </main>
   );

@@ -10,14 +10,23 @@ export const metadata: Metadata = {
 export default function MdxLayout({ children }: { children: React.ReactNode }) {
     return (
         <main>
-            <motion.a
-            viewport={{ once: true }}
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1, x: [-20, 0] }}
-            transition={{ delay: 1, duration: 0.4, ease: "easeOut" }}
-            href="/re-enrollment" className="fixed left-[40px] btn-link">
+            <motion.a         
+                viewport={{ once: true }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, x: [-20, 0] }}
+                transition={{ delay: 1, duration: 0.4, ease: "easeOut" }}
+                href="/" className="fixed left-[40px] btn-link">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m276.85-460 231.69 231.69L480-200 200-480l280-280 28.54 28.31L276.85-500H760v40H276.85Z"/></svg>
-                Previous case
+                Portfolio overview
+            </motion.a>
+            <motion.a         
+                viewport={{ once: true }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1, x: [20, 0] }}
+                transition={{ delay: 1, duration: 0.4, ease: "easeOut" }}
+                href="/re-enrollment" className="fixed right-[40px] btn-link">
+                Next case
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M683.15-460H200v-40h483.15L451.46-731.69 480-760l280 280-280 280-28.54-28.31L683.15-460Z"/></svg>
             </motion.a>
             {children}
             <footer>
@@ -43,6 +52,7 @@ export default function MdxLayout({ children }: { children: React.ReactNode }) {
                     transition={{ delay: 1, duration: 0.4, ease: "easeIn" }}
                     href="/" className="btn-link">
                         portfolio overview
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M683.15-460H200v-40h483.15L451.46-731.69 480-760l280 280-280 280-28.54-28.31L683.15-460Z"/></svg>
                     </motion.a>
                 </p>
             </footer>

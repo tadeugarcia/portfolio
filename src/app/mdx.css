@@ -1,52 +1,51 @@
 body {
   @apply
-  px-0 py-20
+  mx-auto px-0 py-20 w-[800px]
 }
 
 hr {
   @apply
   my-10 m-auto
-  w-[800px]
   border-slate-500
 }
 
 h1 {
   @apply
   mb-4 m-auto
-  w-[800px]
   text-5xl font-bold
 }
 
 h2 {
   @apply
   mt-16 mb-2 m-auto
-  w-[800px]
   text-2xl font-bold
 }
 
 p {
   @apply
   mb-4 m-auto
-  w-[800px]
-  text-xl font-light
+  text-xl font-normal
+}
+
+strong {
+  @apply
+  font-semibold
 }
 
 small {
   @apply
   m-auto my-4 block
-  w-[800px]
-  text-base font-light
+  text-base font-normal
 }
 
 ul {
   @apply
   pl-5 m-auto
-  w-[800px]
 }
 
 li {
   @apply
-  list-disc text-xl font-light
+  list-disc text-xl font-normal
 }
 
 li strong {
@@ -56,15 +55,7 @@ li strong {
 
 mark {
   @apply
-  px-1
-  bg-emerald-900
-  text-white font-light
-}
-
-figure {
-  @apply
-  my-10 m-auto
-  max-w-[800px]
+  px-1 font-normal
 }
 
 figure img {
@@ -79,8 +70,7 @@ figcaption {
 
 footer {
   @apply
-  mt-10 pt-10 m-auto
-  w-[800px]
+  mt-16 pt-10 m-auto
   border-t border-slate-500
 }
 
@@ -92,7 +82,6 @@ footer h2 {
 .project-details {
   @apply  
   pb-10 mt-10 m-auto
-  w-[800px]
   border-b border-slate-500
 }
 
@@ -109,18 +98,30 @@ footer h2 {
   text-base
 }
 
-.case-images {
-  @apply 
-  m-auto
-  w-fit
-  grid grid-flow-col auto-cols-max gap-x-8
-  transition duration-300 ease-in-out
+.project-cards ul {
+  @apply
+  my-10 p-0
+  grid grid-cols-3 gap-4
 }
 
-.case-images figure {
+.project-cards li {
   @apply
-  hover:scale-110
-  transition duration-300 ease-in-out 
+  list-none
+  px-4 py-4
+  rounded-2xl
+}
+
+.project-cards svg {
+  @apply
+  mb-4
+}
+
+.case-images {
+  @apply 
+  mx-auto my-16
+  w-fit
+  grid grid-cols-2 gap-16
+  transition duration-300 ease-in-out
 }
 
 .case-images figcaption {

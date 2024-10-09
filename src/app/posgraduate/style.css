@@ -1,11 +1,11 @@
 body {
   @apply
-  bg-gray-950 text-white
+  bg-gradient-to-tr from-stone-950 via-slate-900 to-slate-950 text-stone-50
 }
 
 mark {
   @apply
-  bg-yellow-700
+  bg-yellow-500/40 text-white
 }
 
 .btn-link {
@@ -16,4 +16,9 @@ mark {
 figure img {
   @apply
   shadow-yellow-900/20
+}
+
+.project-cards li {
+  @apply
+  bg-opacity-5 bg-white
 }
