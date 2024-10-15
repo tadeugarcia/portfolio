@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useRef } from 'react';
 import Image from "next/image";
 import reenrollment1 from '/public/re-enrollment/new-screens-1.svg';
 import reenrollment2 from '/public/re-enrollment/new-screens-2.svg';
@@ -15,19 +15,6 @@ import posgraduate5 from '/public/posgraduate/new-screens-5.svg';
 import { Linkedin02Icon, GithubIcon, GoogleDocIcon, PenTool03Icon, AnalyticsUpIcon, ViewIcon, SourceCodeCircleIcon, Beach02Icon, PlayIcon, CursorMagicSelection01Icon, UmbrellaIcon } from "hugeicons-react";
 
 export default function Home() {
-
-  const [isPlaying, setIsPlaying] = useState(false);
-
-  const handlePlay = () => {
-    const video = document.getElementById("videoPlayer") as HTMLVideoElement | null;
-    if (video) {
-      video.play();
-      setIsPlaying(true);
-    } else {
-      console.error("Video element not found");
-    }
-  };
-  
   return (
     <main>      
       <section>
@@ -108,25 +95,16 @@ export default function Home() {
                 animate={{ opacity: 1, y: [20, 0]}}
                 transition={{ delay: .4, duration: .4, ease: "easeOut" }}
                 className="relative">
-                  {!isPlaying && ( 
-                    <button onClick={handlePlay} className="absolute z-10 inset-0 flex flex-row justify-start items-end p-10 bg-black bg-opacity-50 rounded-2xl">
-                      <svg className="mr-3 p-3 size-12 fill-green-950 bg-white rounded-full shadow-lg" xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M320-200v-560l440 280-440 280Z"/></svg>
-                      <div className="text-left text-white">
-                        <h2 className="text-xl font-bold">Introducing myself</h2>
-                        <p className="text-sm">An overview of my skills and experiences</p>
-                      </div>
-                    </button>
-                  )}
-
                   <video
-                    id="videoPlayer"
                     className="w-full rounded-2xl shadow-2xl shadow-green-900/40"
-                    controls={isPlaying}
-                    controlsList="nodownload"
-                    disablePictureInPicture
-                    preload="auto"
-                    onPlay={() => setIsPlaying(true)}>
-                    <source src="intro.mp4" type="video/mp4" />
+                    src="intro.mp4"
+                    loop
+                    autoPlay
+                    muted
+                    controls
+                    controlsList="nodownload nofullscreen noplaybackrate"
+                    disableRemotePlayback x-webkit-airplay="deny"
+                    disablePictureInPicture>
                     Your browser does not support the video tag.
                   </video>
               </motion.div>
