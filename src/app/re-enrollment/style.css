@@ -1,6 +1,8 @@
 body {
   @apply
-  bg-gradient-to-tr from-emerald-50 via-blue-100 to-amber-50 text-emerald-950
+   from-emerald-50 via-blue-100 to-amber-50 text-emerald-950;
+   background-image: url(/noise.svg), linear-gradient(to top right, var(--tw-gradient-from), var(--tw-gradient-stops), var(--tw-gradient-to));
+   background-blend-mode: multiply;
 }
 
 mark {

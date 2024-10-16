@@ -11,19 +11,19 @@ import posgraduate2 from '/public/posgraduate/new-screens-2.svg';
 import posgraduate3 from '/public/posgraduate/new-screens-3.svg';
 import posgraduate4 from '/public/posgraduate/new-screens-4.svg';
 import posgraduate5 from '/public/posgraduate/new-screens-5.svg';
-import { Linkedin02Icon, GithubIcon, StackStarIcon, GoogleDocIcon, PenTool03Icon, AnalyticsUpIcon, ViewIcon, SourceCodeCircleIcon, Beach02Icon, PlayIcon, CursorMagicSelection01Icon, UmbrellaIcon } from "hugeicons-react";
+import { ArrowRight02Icon, Linkedin02Icon, GithubIcon, StackStarIcon, GoogleDocIcon, PenTool03Icon, AnalyticsUpIcon, ViewIcon, SourceCodeCircleIcon, Beach02Icon, PlayIcon, CursorMagicSelection01Icon, UmbrellaIcon } from "hugeicons-react";
 
 export default function Home() {
   
   return (
     <main>      
-      <section className="min-h-[90vh]">
+      <section className="min-h-[90vh] rounded-none border-b-2 border-b-slate-900 bg-noise from-green-100 via-emerald-50 to-lime-50 text-green-950">
         <motion.div 
           viewport={{ once: true }}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1, y: [20, 0] }}
           transition={{ delay: 0, duration: .4, ease: "easeOut" }}
-          className="container my-16 p-16 grid grid-cols-5 rounded-2xl backdrop-blur-sm bg-green-950/60 text-green-50">
+          className="container my-16 p-16 grid grid-cols-5">
             <div className="col-span-3">   
               <motion.p          
                 initial={{ opacity: 0 }}
@@ -37,12 +37,12 @@ export default function Home() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, y: [20, 0]}}
                 transition={{ delay: .8, duration: .4, ease: "easeOut" }}
-                className="mt-6 flex space-x-2">
-                <a href="#first-case" className="button-primary bg-green-600 border-green-600">
+                className="mt-6 flex space-x-4">
+                <a href="#first-case" className="button-primary bg-green-600 border-green-600 hover:bg-emerald-600 hover:border-emerald-600">
                   <StackStarIcon/>
                   View case studies
                 </a>
-                <a href="Tadeu Garcia - Resume.pdf" target="_blank" className="button-outline hover:bg-white hover:text-green-950 hover:fill-green-950">
+                <a href="Tadeu Garcia - Resume.pdf" target="_blank" className="button-outline fill-green-950 text-green-950 border-green-950 hover:bg-green-950 hover:text-white hover:fill-white">
                   <GoogleDocIcon/>
                   View my resume
                 </a>
@@ -97,27 +97,9 @@ export default function Home() {
               </div>              
             </div>
         </motion.div>
-
-        <motion.div
-          viewport={{ once: true }}
-          initial={{ opacity: 1 }}
-          transition={{ delay: 0, duration: .4, ease: "easeOut" }}
-          className="-z-10 right-0 bottom-200rem absolute p-20 w-screen grid grid-cols-5 gap-16 bg-gradient-to-tr from-purple-100 via-emerald-100 to-lime-100">
-            <Image src={reenrollment3} className="border rounded-2xl border-black/20 opacity-20" alt=""/>
-            <Image src={reenrollment5} className="border rounded-2xl border-black/20 opacity-20" alt=""/>
-            <Image src={reenrollment2} className="border rounded-2xl border-black/20 opacity-20" alt=""/>
-            <Image src={reenrollment1} className="border rounded-2xl border-black/20 opacity-20" alt=""/>
-            <Image src={reenrollment2} className="border rounded-2xl border-black/20 opacity-20" alt=""/>
-
-            <Image src={reenrollment4} className="border rounded-2xl border-black/20 opacity-20" alt=""/>
-            <Image src={reenrollment3} className="border rounded-2xl border-black/20 opacity-20" alt=""/>
-            <Image src={reenrollment2} className="border rounded-2xl border-black/20 opacity-20" alt=""/>
-            <Image src={reenrollment5} className="border rounded-2xl border-black/20 opacity-20" alt=""/>
-            <Image src={reenrollment1} className="border rounded-2xl border-black/20 opacity-20" alt=""/>
-        </motion.div>
       </section>
 
-      <section id="first-case" className="bg-gradient-to-tr from-stone-950 via-slate-900 to-slate-950 text-stone-50">
+      <section id="first-case" className="bg-noise from-stone-950 via-slate-900 to-slate-950 text-stone-50">
         <div className="case-section">         
           <motion.ul        
             viewport={{ once: true }}
@@ -138,7 +120,7 @@ export default function Home() {
             transition={{ delay: 0, duration: .4, ease: "easeOut" }}>
               <h3 className="case-title">Premium posgraduate redesign</h3>
               <p>I redesigned the postgraduate course purchase flow with a premium UI, <span className="underline decoration-2 decoration-yellow-500">achieving 57.14% faster navigation.</span></p>
-              <a href="/posgraduate" className="button-primary mt-4 bg-yellow-600 border-yellow-600">View case</a>
+              <a href="/posgraduate" className="button-primary mt-4 bg-yellow-600 border-yellow-600 hover:bg-amber-600 hover:border-amber-600">View case <ArrowRight02Icon className="ml-1"/></a>
           </motion.div>
 
           <motion.a          
@@ -157,7 +139,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="first-case" className="bg-gradient-to-tr from-emerald-50 via-blue-100 to-amber-50 text-emerald-950">
+      <section id="first-case" className="bg-noise from-emerald-50 via-blue-100 to-amber-50 text-emerald-950">
         <div className="case-section">         
           <motion.ul        
             viewport={{ once: true }}
@@ -177,7 +159,7 @@ export default function Home() {
             transition={{ delay: 0, duration: .4, ease: "easeOut" }}>
               <h3 className="case-title">Payment of outstanding fees</h3>
               <p>How I designed the re-enrollment flow, automating financial processes and <span className="underline decoration-2 decoration-emerald-500">boosting debt clearance.</span></p>
-              <a href="/re-enrollment" className="button-primary mt-4 bg-emerald-600 border-emerald-600">View case</a>
+              <a href="/re-enrollment" className="button-primary mt-4 bg-emerald-600 border-emerald-600 hover:bg-teal-600 hover:border-teal-600">View case <ArrowRight02Icon className="ml-1"/></a>
           </motion.div>
 
           <motion.a          
@@ -196,7 +178,7 @@ export default function Home() {
         </div>
       </section>
       
-      <section className="bg-gradient-to-tr from-purple-50 via-emerald-50 to-lime-50 text-green-950">
+      <section className="bg-noise from-yellow-50 via-emerald-50 to-lime-50 text-green-950">
         <div className="container grid gap-10">
           <motion.h2
             viewport={{ once: true }}
