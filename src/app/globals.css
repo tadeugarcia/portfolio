@@ -37,14 +37,13 @@ section {
   }
   
   .navbar-link { @apply
-    inline-flex items-center
-    hover:text-green-800 transition duration-300
+    inline-flex items-center align-middle
+    hover:text-green-700 transition duration-300
   }
 
   .navbar-link svg {
     @apply
-    mr-2 p-1 size-7
-    rounded-md bg-green-200
+    mr-1 p-1 size-7
   }  
 
   .title { @apply

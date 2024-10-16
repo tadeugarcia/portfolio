@@ -36,7 +36,7 @@ export default function Home() {
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, y: [20, 0]}}
-                transition={{ delay: .8, duration: .4, ease: "easeOut" }}
+                transition={{ delay: .4, duration: .4, ease: "easeOut" }}
                 className="mt-6 flex space-x-4">
                 <a href="#first-case" className="button-primary bg-green-600 border-green-600 hover:bg-emerald-600 hover:border-emerald-600">
                   <StackStarIcon/>
@@ -53,7 +53,7 @@ export default function Home() {
               <motion.div         
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, y: [20, 0]}}
-                transition={{ delay: .4, duration: .4, ease: "easeOut" }}
+                transition={{ delay: .8, duration: .4, ease: "easeOut" }}
                 className="relative">
                   <video
                     className="h-full rounded-2xl shadow-2xl shadow-green-900/40"
@@ -71,10 +71,9 @@ export default function Home() {
 
               <div>
                 <motion.h1
-                  viewport={{ once: true }}
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1, y: [20, 0] }}
-                  transition={{ delay: 0, duration: .4, ease: "easeOut" }}
+                  transition={{ delay: 1.2, duration: .4, ease: "easeOut" }}
                   className="text-lg font-bold">
                   Tadeu Garcia
                 </motion.h1>
@@ -82,14 +81,14 @@ export default function Home() {
                   <motion.span            
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1, y: [20, 0]}}
-                    transition={{ delay: .4, duration: .4, ease: "easeOut" }}
+                    transition={{ delay: 1.6, duration: .4, ease: "easeOut" }}
                     className="font-light">
                     Senior Product Designer&nbsp;
                   </motion.span>
                   <motion.span          
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1, x: [20, 0] }}
-                    transition={{ delay: .8, duration: .4, ease: "easeOut" }}
+                    transition={{ delay: 2.0, duration: .4, ease: "easeOut" }}
                     className="font-semibold">
                     based in Rio de Janeiro <Beach02Icon className="inline"/>
                   </motion.span>
@@ -139,7 +138,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="first-case" className="bg-noise from-emerald-50 via-blue-100 to-amber-50 text-emerald-950">
+      <section id="first-case" className="bg-noise from-emerald-50 via-blue-50 to-amber-50 text-emerald-950">
         <div className="case-section">         
           <motion.ul        
             viewport={{ once: true }}
@@ -178,7 +177,7 @@ export default function Home() {
         </div>
       </section>
       
-      <section className="bg-noise from-yellow-50 via-emerald-50 to-lime-50 text-green-950">
+      <section className="bg-noise from-purple-100 via-indigo-50 to-blue-100 text-green-950">
         <div className="container grid gap-10">
           <motion.h2
             viewport={{ once: true }}
