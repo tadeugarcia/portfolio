@@ -67,10 +67,26 @@ section {
   }
 
   .button-primary { @apply
-    mt-4 py-2 px-4 block w-fit
-    rounded-full
+    py-2 px-4 w-fit flex space-x-4 h-fit
+    rounded-full border
     font-medium text-white
-    hover:brightness-110 transition duration-300 ease-in-out
+    hover:brightness-110
+    transition duration-300 ease-in-out
+  }
+
+  .button-primary svg { @apply
+    mr-2
+  }
+
+  .button-outline { @apply
+    py-2 px-4 w-fit flex space-x-4 h-fit
+    rounded-full border
+    font-medium
+    transition duration-300 ease-in-out
+  }
+
+  .button-outline svg { @apply
+    mr-2
   }
   
   .case-section { @apply
